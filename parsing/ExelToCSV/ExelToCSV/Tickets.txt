@@ -1,0 +1,367 @@
+Id;SEQUENCE;Sex;First Name;Last Name;Y;Flight;Departure;Arrival;Gate;AirportIdD;AirportIdA;Date;Time;OperatorInfo;Info;Seat;PNR;E-TICKET
+1;32;MRS;LIDIYA;ZHDANOVA;Y;SU5436;VLADIVOSTOK;SEOUL;;VVO;REA;2017-01-01;11:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DYELAO;7100246988860481
+2;42;MR;MAKSIM;KARTASHOV;Y;SU1191;KAZAN;MOSCOW;;KZN;SVO;2017-01-02;12:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JLXPWW;8023093672216494
+3;10;MRS;GALINA;BULGAKOVA;Y;SU3204;MOSCOW;AMSTERDAM;;SVO;AMS;2017-01-11;17:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KXZDEB;1993469860247264
+4;16;MRS;OKULOVA;MADINA V;Y;CZ3734;BEIJING;ZHUHAI;;PEK;ZUH;2017-04-11;16:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WJXZBU;4892020770687464
+5;14;MRS;DOBRYNINA;AL'BINA;Y;AF6130;PARIS;TOULOUSE;;ORY;TLS;2017-04-12;16:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BWVBAI;3005864306638858
+6;93;MR;AL'BERT;LAPIN;Y;SU1548;MOSCOW;NOVOSIBIRSK;;SVO;OVB;2017-04-13;20:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PYAQAX;1088632418169711
+7;58;MRS;IZMAYLOVA;OL'GA;Y;GA202;JAKARTA;YOGYAKARTA;;CGK;JOG;2017-04-14;05:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UYFKCL;2431724187720400
+8;43;MR;IVAN;ORLOV;Y;CZ6014;ASTANA;URUMQI;;TSE;URC;2017-04-15;20:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ATPDHB;9936059293920610
+9;62;MRS;KOZHEVNIKOVA;AGATA;Y;CZ6058;PHUKET;GUANGZHOU;;HKT;CAN;2017-04-16;00:01;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KXTRDT;3856744338916701
+10;63;MRS;KOSHELEVA;ALISA;Y;KL6191;DUBLIN;NEW YORK NY;;DUB;JFK;2017-04-17;09:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PTGXIC;3574853478961527
+11;6;MR;VOROB'EV;TIMOFEY;Y;SU2184;MOSCOW;VIENNA;;SVO;VIE;2017-04-18;09:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GXIZVF;8592020527937089
+12;9;MR;DEMID;TROITSKIY;Y;SU1211;SAMARA;MOSCOW;;KUF;SVO;2017-04-19;12:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZRAJQG;5224032092911768
+13;59;MRS;TUMANOVA;INNA;SU 504150073;AZ1019;MILAN;ROME;;MXP;FCO;2017-04-20;11:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QHGAXS;6326776654403580
+14;81;MRS;SEMINA;AMELIYA;Y;CZ6030;TASHKENT INTERNATIONAL;URUMQI;;TAS;URC;2017-01-12;00:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VDBSXT;7237811988093354
+15;21;MRS;LIUBIMOVA;SABINA;Y;UX4681;BARCELONA;SEVILLA;;BCN;SVQ;2017-04-21;08:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;AQICZS;6770306096229428
+16;100;MRS;LOBANOVA;SNEZHANA;Y;KE5715;SEOUL;TOKYO;;REA;NRT;2017-04-22;06:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HOCCEJ;5350243415480649
+17;60;MRS;BELKINA;NINA;KE 799020839;SU1255;MOSCOW;NIZHNEKAMSK;;SVO;NBC;2017-04-23;11:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WZPUMD;3817709378907543
+18;95;MR;NOVIKOV;SVIATOGOR;Y;MU774;PARIS;KUNMING;;CDG;KMG;2017-04-24;11:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LWLZFL;8034612218551949
+19;30;MR;EGOR;SPIRIDONOV;Y;OK744;PRAGUE;NICE;;PRG;NCE;2017-04-25;10:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ODIXFD;0470178697371008
+20;64;MR;KONSTANTIN;PAVLOVSKIY;KE 248765601;SU1443;IRKUTSK;MOSCOW;;IKT;SVO;2017-04-26;09:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YWAKDX;4827698480085877
+21;100;MRS;PANFILOVA;VASILINA E;Y;VN285;HANOI;HO CHI MINH CITY;;HAN;SGN;2017-04-27;21:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DJGKAU;2770076028487190
+22;2;MR;KOZYREV;DENIS M;Y;SU1955;AKTAU;MOSCOW;;SCO;SVO;2017-04-28;04:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GJBXIU;6190644811446558
+23;82;MR;ADEL';FILATOV;Y;AZ7948;MILAN;MOSCOW;;MXP;SVO;2017-04-29;17:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EWYDPX;7117171755079758
+24;87;MRS;MILANA;SHEVELEVA;Y;SU1621;SIMFEROPOL;MOSCOW;;SIP;SVO;2017-04-30;12:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LRPTLL;8144747283706483
+25;31;MR;IURII;NIKOLAEV;A;SU5602;VLADIVOSTOK;KHABAROVSK;;VVO;KHV;2017-01-13;16:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CSHDPX;6509097804760961
+26;100;MR;RODION;IL'INSKIY;Y;AZ2029;MILAN;ROME;;LIN;FCO;2017-05-01;09:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IMSOTJ;0272801095306520
+27;41;MRS;ANASTASIYA;I OKULOVA;Y;UX9919;MADRID;LANZAROTE;;MAD;ACE;2017-05-02;08:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BIHXBD;8343066198982821
+28;56;MR;DANIL;OZEROV;Y;KL1916;AMSTERDAM;GDANSK;;AMS;GDN;2017-05-03;06:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ONVMWC;9948706368429328
+29;98;MRS;BELIKOVA;LYUDMILA;Y;UX7235;MADRID;LA CORUNA;;MAD;LCG;2017-05-04;14:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CWQTYF;8012473001761289
+30;51;MR;DEMIDOV;STEPAN;SU 603480584;VN1825;HO CHI MINH CITY;PHU QUOC ISLAND;;SGN;PQC;2017-05-05;11:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VYNHNQ;5738543816351628
+31;96;MR;GRIGOR'EV;VITALIY;Y;UX9156;MADRID;GRAN CANARIA;;MAD;LPA;2017-05-06;07:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JXKORH;4211461976039186
+32;31;MR;BORIS;S LAPSHIN;J;GA879;SEOUL;JAKARTA;;REA;CGK;2017-05-07;10:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GHPHWT;8526596943929049
+33;47;MRS;PARFENOVA;SNEZHANA;FB 279076129;OK505;COPENHAGEN;PRAGUE;;CPH;PRG;2017-05-08;09:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KNDXTJ;5401177943993969
+34;25;MRS;GERASIMOVA;MADINA;KE 541880646;CZ6583;GUIYANG;SHIYAN;;KWE;WDS;2017-05-09;08:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ETBQHV;7739801629248746
+35;85;MRS;NIKOLSKAIA;MIROSLAVA;DT 899487820;DL661;ATLANTA GA;CLEVELAND OH;;ATL;CLE;2017-05-10;12:24;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TEFBAX;4427871492043301
+36;16;MRS;SHMELEVA;MIROSLAVA;KE 192288635;SU1421;CHELYABINSK;MOSCOW;;CEK;SVO;2017-01-14;12:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CURMSH;2446979292787305
+37;9;MR;KALMYKOV;RODION;Y;DL5228;WASHINGTON;NEW YORK NY;;IAD;JFK;2017-05-11;10:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JKQSXC;7071680946061276
+38;2;MRS;IRINA;N ROZANOVA;A;AZ7380;BOLOGNA;BACAU;;BLQ;BCM;2017-05-12;18:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LYLBLB;4400147780457761
+39;65;MR;RUSLAN;MAYOROV;Y;AF5528;BRIVE;PARIS;;BVE;ORY;2017-05-13;07:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;AKRYKX;5285082091896520
+40;40;MRS;LEONOVA;VLADA;Y;AZ1494;VERONA;ROME;;VRN;FCO;2017-05-14;19:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BNKQFJ;4873553727439458
+41;35;MR;SAVELII;BULGAKOV;Y;KQ3503;MOSCOW;DUBAI;;SVO;DXB;2017-05-15;07:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SBZBOY;5255194383794046
+42;71;MRS;KOLOSOVA;VERONIKA;Y;KE767;SEOUL;AOMORI;;REA;AOJ;2017-05-16;10:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UWCCFQ;4632537337404452
+43;31;MR;KORSHUNOV;KONSTANTIN;FB 640902810;GA9606;SINGAPORE;HANOI;;SIN;HAN;2017-05-17;16:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DXQZIU;3225609457609021
+44;54;MRS;PETUKHOVA;ELMIRA;Y;KL1631;AMSTERDAM;MILAN;;AMS;MXP;2017-05-18;14:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GIPXLI;6932875988779898
+45;44;MR;TIMOFEY;KUPRIYANOV;Y;CZ3610;SHANGHAI;SHENZHEN;;PVG;SZX;2017-05-19;19:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZQNSYB;9292236333081082
+46;76;MR;PETR;BEREZIN;Y;CZ3255;GANZHOU;BEIJING;;KOW;PEK;2017-05-20;16:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HZVEOD;0471106273349723
+47;46;MRS;NINA;CHERNOVA;Y;SU2502;MOSCOW;VALENCIA;;SVO;VLC;2017-01-15;06:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CAMSKX;9304316773151922
+48;29;MRS;IRINA;CHEREPANOVA;Y;AF5368;BORDEAUX;LYON;;BOD;LYS;2017-05-21;06:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZRBDTK;3803151083585879
+49;18;MRS;MADINA;BIRIUKOVA;Y;SU1450;MOSCOW;KEMEROVO;;SVO;KEJ;2017-05-22;20:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SYOTNS;5117068689686216
+50;29;MRS;TATIANA;EZHOVA;KE 678694519;DL2634;NEW YORK NY;SAN FRANCISCO CA;;JFK;SFO;2017-05-23;15:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HBWGTG;8170182828900731
+51;92;MRS;KORSHUNOVA;ELVIRA;A;AZ1299;MILAN;NAPLES;;LIN;NAP;2017-05-24;13:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;RWFMJR;9764844495725039
+52;6;MR;IUDIN;DAMIR;SU 181445081;AZ884;ROME;MALTA;;FCO;MLA;2017-05-25;09:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VWHKUN;1591946602889664
+53;74;MR;LOPATIN;DENIS;Y;MU9516;SHANGHAI;ZHUHAI;;SHA;ZUH;2017-05-26;13:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VSMIUO;2054247251167012
+54;87;MRS;LEBEDEVA;EVA;SU 397042930;UX6048;PALMA DE MALLORCA;MADRID;;PMI;MAD;2017-05-27;12:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FFCYWR;3022482074169949
+55;63;MR;ELISEY;D GREKOV;FB 294407146;SV1793;JAZAN;JEDDAH;;GIZ;JED;2017-05-28;01:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IHODUK;0745884557176239
+56;47;MR;SHUL'GIN;VASILIY V;FB 885182141;AZ2013;MILAN;ROME;;LIN;FCO;2017-05-29;07:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FQXNHM;1414214061675664
+57;63;MRS;UVAROVA;SOFIYA;Y;VN3412;HANOI;SEOUL;;HAN;REA;2017-05-30;12:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BCTKAC;2692640276869217
+58;77;MRS;TAMARA;G KHROMOVA;Y;SU1431;BARNAUL;MOSCOW;;BAX;SVO;2017-01-16;07:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WCDAAJ;3484666922313352
+59;65;MRS;SOMOVA;DARINA;Y;DL972;CHICAGO IL;ATLANTA GA;;ORD;ATL;2017-05-31;11:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UZJJVE;1230287732907768
+60;86;MRS;ELIZAVETA;KISELEVA;Y;MU5257;QINGDAO;GUANGZHOU;;TAO;CAN;2017-06-01;07:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KZFXQC;1331388632378539
+61;53;MR;MERKULOV;RODION;Y;AF7;PARIS;NEW YORK NY;;CDG;JFK;2017-06-02;19:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PYCVPQ;6978359219402735
+62;30;MR;ILIN;AIDAR;A;CZ6723;GUIYANG;NINGBO;;KWE;NGB;2017-06-03;14:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HNKAKL;8173691225448288
+63;59;MR;RUSLAN;EVSEEV;Y;ME345;AL NAJAF;BEIRUT;;NJF;BEY;2017-06-04;00:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FJXYAC;6000380297013812
+64;73;MRS;BULATOVA;SNEZHANA;Y;SU6035;SAINT PETERSBURG;MOSCOW;;LED;VKO;2017-06-05;17:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FTJBOO;8578860373854992
+65;68;MR;GUSHCHIN;ALEXEY;Y;SU1892;MOSCOW;TBILISI;;SVO;TBS;2017-06-06;21:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BRWFDC;7902434697439890
+66;78;MR;SOMOV;STANISLAV;SU 349744753;KL1620;MILAN;AMSTERDAM;;LIN;AMS;2017-06-07;11:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;OMFCMY;5514776960578791
+67;15;MR;PETR;KRASNOV;Y;CZ6957;URUMQI;GUANGZHOU;;URC;CAN;2017-06-08;08:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PVSZYH;4478211574430722
+68;8;MR;KOSHELEV;DMITRII;FB 225676057;AZ7428;TURIN;PARIS;;TRN;CDG;2017-06-09;08:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GHEFKB;1897453734216675
+69;41;MRS;OKSANA;LAPSHINA;Y;CI9852;PHUKET;BANGKOK;;HKT;BKK;2017-01-17;10:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SHFUJI;7101733505440716
+70;32;MR;ANATOLII;ALESHIN;Y;SU6291;MOSCOW;VLADIVOSTOK;;SVO;VVO;2017-06-10;15:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WJQYSA;7234839143217928
+71;46;MRS;ALIYA;DRUZHININA;Y;SU234;MOSCOW;DELHI;;SVO;DEL;2017-06-11;13:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HMIDYK;2780997705175842
+72;42;MRS;PUGACHEVA;LIANA;Y;DL1533;PITTSBURGH PA;ATLANTA GA;;PIT;ATL;2017-06-12;09:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VRTCLJ;3957418246574461
+73;0;MRS;LYUBIMOVA;VIKTORIYA;Y;CZ3182;CHENGDU;GUANGZHOU;;CTU;CAN;2017-06-13;13:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WRYOHI;3224416633141088
+74;55;MR;GRISHIN;STEPAN;SU 280409788;SU6640;BERLIN;SAINT PETERSBURG;;SXF;LED;2017-06-14;17:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IUXHKI;2296668575945796
+75;83;MR;OLEG;GERASIMOV;DT 510276966;CZ3265;GUILIN;NANJING;;KWL;NKG;2017-06-15;08:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NJTXKW;1597926132291930
+76;62;MRS;MALYSHEVA;TATIANA;Y;GA110;JAKARTA;PALEMBANG;;CGK;PLM;2017-06-16;15:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JVGHNG;1485371934272233
+77;1;MR;MEDVEDEV;ANDREY;Y;CI9712;CHIANG MAI;BANGKOK;;CNX;BKK;2017-06-17;14:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DXZYBH;5418403435855646
+78;65;MR;EROFEEV;DANIL;Y;SV1053;RIYADH;JEDDAH;;RUH;JED;2017-06-18;22:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DWGBOO;0312197473116112
+79;94;MRS;TROSHINA;VASILISA G;Y;KE5677;HO CHI MINH CITY;SEOUL;;SGN;REA;2017-06-19;11:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MSHRSI;3864356224630828
+80;43;MRS;BELYAEVA;YASMINA;Y;AZ7025;MOSCOW;ROME;;SVO;FCO;2017-01-18;08:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;XJHXAU;9595878454929627
+81;85;MRS;AMELIIA;KALMYKOVA;A;AZ5615;ABU DHABI;MAHE ISLAND;;AUH;SEZ;2017-06-20;02:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CYSEMA;4567476005636285
+82;86;MRS;SAMIRA;IL'INSKAYA;Y;CZ3024;TAIPEI;ZHENGZHOU;;TPE;CGO;2017-06-21;11:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PSUETK;3261325237513077
+83;32;MR;ANDRIANOV;LEONID;SU 498150667;SV2413;MADINAH;ORAN;;MED;ORN;2017-06-22;02:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZXGLBX;3864552424846422
+84;92;MRS;VOLOSHINA;VLADA;Y;SU5474;VLADIVOSTOK;HONG KONG;;VVO;SAR;2017-06-23;17:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TXMXNA;4036445790892982
+85;9;MRS;ANZHELIKA;KONDRASHOVA;Y;DL2459;SEATTLE WA;DETROIT MI;;SEA;DTW;2017-06-24;06:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZIFBLB;2214969099641197
+86;20;MR;ARTEMOV;VIACHESLAV;Y;DL5223;CINCINNATI OH;MINNEAPOLIS/ST PAUL MN;;CVG;MSP;2017-06-25;06:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BWGKAJ;4194107560367443
+87;11;MRS;VORONINA;KSENIYA;Y;KE5777;SEOUL;GUAM;;REA;GUM;2017-06-26;06:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LAXBKC;8924890806566123
+88;8;MRS;NATAL'YA;P BELYAEVA;SU 252649499;AR1513;CORDOBA;BUENOS AIRES;;COR;AEP;2017-06-27;08:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DNDOCH;7285629827839051
+89;95;MR;TROSHIN;NIKITA R;Y;CZ6951;URUMQI;XINING;;URC;XNN;2017-06-28;08:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NZIBED;2516483957665941
+90;69;MRS;NAUMOVA;MELANIYA;P;AF833;POINTE;PARIS;;PNR;CDG;2017-06-29;21:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CHEDHA;7637555049840816
+91;75;MRS;ESENIYA;SOFRONOVA;Y;SU32;MOSCOW;SAINT PETERSBURG;;SVO;LED;2017-01-19;20:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;AIJJHC;3550543499087409
+92;94;MR;SEMENOV;SVYATOGOR;Y;OK779;WARSAW;PRAGUE;;WAW;PRG;2017-06-30;19:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JKHMEL;5415103444332712
+93;42;MRS;ERMOLAEVA;MARINA T;KE 879398394;DL3777;HOUSTON TX;NEW YORK NY;;IAH;LGA;2017-07-01;12:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;RYHRPS;3655014536333962
+94;31;MR;MUKHIN;DEMID;KE 581500260;SU6;MOSCOW;SAINT PETERSBURG;;SVO;LED;2017-07-02;06:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SNEFAK;0087651124526993
+95;49;MR;RUSLAN;EMEL'YANOV;Y;MU9142;QINHUANGDAO;SHANGHAI;;BPE;PVG;2017-07-03;10:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KTCZHF;4700930384626250
+96;82;MR;ELISEI;NIKULIN;Y;VN187;HANOI;DA NANG;;HAN;DAD;2017-07-04;19:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;STJKNU;2975930974730029
+97;60;MR;CHERNIAEV;TIMUR;Y;RO701;IASI;BUCHAREST;;IAS;OTP;2017-07-05;07:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DSWVNU;9841566098150883
+98;27;MRS;KAMILLA;GRIGOR'EVA;A;SU1189;VOLGOGRAD;MOSCOW;;VOG;SVO;2017-07-06;14:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PCBAEP;4977623767985184
+99;73;MRS;MOSKVINA;EVGENIIA;Y;SU508;MOSCOW;TEL AVIV;;SVO;TLV;2017-07-07;13:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KABQFV;7575100951992473
+100;70;MR;GERMAN;M BULGAKOV;FB 351327051;DL390;SEATTLE WA;SPOKANE WA;;SEA;GEG;2017-07-08;16:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VCCUBK;4543054641847033
+101;100;MRS;KORSHUNOVA;ANNA M;FB 564213679;MU2218;XINING;YUSHU;;XNN;YUS;2017-07-09;16:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PWOYEP;8175161219310880
+102;67;MRS;EMELIANOVA;LILIIA;Y;SU6234;SAMARA;SAINT PETERSBURG;;KUF;LED;2017-01-20;12:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ASFTAB;1501478615316491
+103;68;MRS;ZLATA;KOROVINA;Y;KL6076;LONDON;ATLANTA GA;;LHR;ATL;2017-07-10;14:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JXJRRM;2273084661060062
+104;19;MRS;AMELIIA;SKVORTSOVA;A;SU1513;SURGUT;MOSCOW;;SGC;SVO;2017-07-11;07:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KAOULF;0234600726035494
+105;40;MR;RODION;SVIRIDOV;Y;MF9248;TOKYO;GUANGZHOU;;HND;CAN;2017-07-12;15:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FSPPKW;6572305304249170
+106;11;MRS;SHISHKINA;VIKTORIYA E;Y;SU6564;SOCHI;SAINT PETERSBURG;;AER;LED;2017-07-13;12:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YZCHQT;3518716455693491
+107;14;MRS;SUBBOTINA;ZARINA N;Y;CZ3748;KUNMING;ZHUHAI;;KMG;ZUH;2017-07-14;21:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;XBBYTK;2540909838172479
+108;8;MR;YAROMIR;A GORSHKOV;Y;DL7707;MELBOURNE;ADELAIDE;;MEL;ADL;2017-07-15;08:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LBOAMK;0445631355886602
+109;61;MR;SAVELEV;STEPAN;DT 668043273;CZ7217;LONDON;NEWCASTLE;;LHR;NCL;2017-07-16;17:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;XFYLEZ;6527845233065735
+110;12;MR;BAZHENOV;RINAT;KE 17408659;SU1475;NIZHNEVARTOVSK;MOSCOW;;NJC;SVO;2017-07-17;17:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LSLPGB;4650006075471082
+111;19;MR;SERGEI;SINITSYN;Y;AF4561;POINTE A PITRE;SAN JUAN;;PTP;SJU;2017-07-18;15:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PRCARZ;8600348893172904
+112;68;MR;KOVALEV;LEV;Y;AZ7942;MILAN;BIRMINGHAM;;MXP;BHX;2017-07-19;10:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HLZMLJ;2338449502240501
+113;32;MR;RADMIR;GORSHKOV;Y;SU2206;MOSCOW;HELSINKI;;SVO;HEL;2017-01-03;09:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TISZPO;5532637664518321
+114;45;MR;KIRILL;TROSHIN;KE 543300541;SU500;MOSCOW;TEL AVIV;;SVO;TLV;2017-01-21;00:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LWHLWT;9782887112979058
+115;79;MRS;BORISOVA;TAISIYA;Y;AF1596;PARIS;CASABLANCA;;CDG;CMN;2017-07-20;12:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JYGLLY;2054788462522264
+116;54;MR;PROKOF'EV;NIKOLAY;FB 138453330;AF7725;NANTES;PARIS;;NTE;CDG;2017-07-21;11:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JZEJJB;3541412891787209
+117;3;MRS;NATALIIA;CHEREPANOVA;Y;KL6082;LONDON;DETROIT MI;;LHR;DTW;2017-07-22;09:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;XTOCSD;3955532964762800
+118;97;MR;GREKOV;YAROMIR D;P;DL1437;MIAMI FL;NEW YORK NY;;MIA;LGA;2017-07-23;15:32;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YVBLMA;3872674745170870
+119;25;MRS;PANINA;EVELINA;KE 249014585;MU9270;HAIKOU;SHANGHAI;;HAK;SHA;2017-07-24;14:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WATXYD;3165111103635716
+120;100;MR;SAVIN;ZAKHAR;Y;SV3839;KUALA LUMPUR;MADINAH;;KUL;MED;2017-07-25;13:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MAFHEZ;2708431006442815
+121;11;MRS;VIOLETTA;ARTAMONOVA;Y;RO621;BUCHAREST;ORADEA;;OTP;OMR;2017-07-26;07:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EOMGGV;4600068007568298
+122;15;MRS;DOLGOVA;VERA;FB 555060623;MU5012;TAIPEI;TAIYUAN;;TPE;TYN;2017-07-27;12:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IYTRPA;0209858701529355
+123;81;MR;TIMUR;SOFRONOV;Y;CI8278;CHANGSHA;TAIPEI;;CSX;TPE;2017-07-28;13:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TEXSGD;3039213231663140
+124;51;MR;SAMIR;BARSUKOV;Y;SU1281;KAZAN;MOSCOW;;KZN;SVO;2017-07-29;14:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WGKZTB;2264717979478322
+125;99;MR;KOMAROV;VSEVOLOD Z;Y;AF5064;PARIS;VALENCIA;;CDG;VLC;2017-01-22;15:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TYLHOP;0527984843882978
+126;45;MR;SHISHKIN;OLEG;DT 911161699;MU9106;BEIJING;SHANGHAI;;PEK;SHA;2017-07-30;20:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;REQGQF;7434452083458884
+127;61;MR;ARSEN;ZVIAGINTSEV;Y;MU5437;SHANGHAI;KUNMING;;PVG;KMG;2017-07-31;07:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TABMBI;9353892164786179
+128;75;MRS;AGEEVA;LIDIYA;Y;DL354;CHICAGO IL;NEW YORK NY;;ORD;LGA;2017-08-01;12:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SIUQKE;8244598807444324
+129;77;MRS;AGATA;POSTNIKOVA;A;CI517;TAIPEI;BEIJING;;TPE;PEK;2017-08-02;15:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CARGQX;8458105856553745
+130;63;MRS;KOROLKOVA;ZARINA;Y;KL1826;BERLIN;AMSTERDAM;;TXL;AMS;2017-08-03;14:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KXRQME;7724758395852885
+131;37;MRS;MIROSLAVA;D USPENSKAYA;SU 548896913;MU1778;SINGAPORE;FUZHOU;;SIN;FOC;2017-08-04;06:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MILMRV;6863694205342019
+132;14;MRS;VERA;TUMANOVA;Y;DL1403;LOS ANGELES CA;ATLANTA GA;;LAX;ATL;2017-08-05;07:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;XCYZGP;2955339300458772
+133;54;MR;DENIS;KUZIN;Y;AF8277;AMSTERDAM;MONTPELLIER;;AMS;MPL;2017-08-06;13:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BCYIDD;1870779637774698
+134;18;MR;ODINTSOV;DANIEL;Y;AF7509;PARIS;TOULON/HYERES;;ORY;TLN;2017-08-07;20:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SCDVZB;8237074638567930
+135;61;MR;MIROSLAV;A ROMANOV;Y;KE112;GUAM;SEOUL;;GUM;REA;2017-08-08;02:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LYEYYS;4449716746609162
+136;28;MRS;EKATERINA;SMIRNOVA;Y;SU2002;MOSCOW;WARSAW;;SVO;WAW;2017-01-23;17:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DDBHJI;5781956657370612
+137;90;MR;ARSEN;ZVIAGINTSEV;Y;MU5803;KUNMING;SHANGHAI;;KMG;SHA;2017-08-09;09:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YYBXNZ;5623923288439290
+138;32;MRS;BELIAKOVA;OLESIA;Y;AZ1171;ROME;LAMEZIA TERME;;FCO;SUF;2017-08-10;13:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DCMNOF;2206862040952996
+139;8;MR;KARASEV;STEPAN;Y;DL1437;NEW YORK NY;SALT LAKE CITY UT;;JFK;SLC;2017-08-11;11:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HBOYKW;1023651496974241
+140;32;MRS;STEFANIIA;KLIMOVA;Y;AF467;RIO DE JANEIRO;PARIS;;GIG;CDG;2017-08-12;21:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QAYQTG;3766189279815663
+141;26;MRS;SOFIYA;POZDNYAKOVA;Y;GA8872;JEDDAH;BANDA ACEH;;JED;BTJ;2017-08-13;23:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WNHPRT;8501228603291407
+142;53;MR;LAPTEV;DAMIR;Y;GA883;OSAKA;DENPASAR;;KIX;DPS;2017-08-14;11:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GITRQM;8778811866694833
+143;74;MR;DMITRIY;SOBOLEV;Y;RO606;TIMISOARA;BUCHAREST;;TSR;OTP;2017-08-15;11:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VJHOLA;9475492582951763
+144;60;MR;KONSTANTINOV;IL'DAR;A;SV3805;KUALA LUMPUR;MADINAH;;KUL;MED;2017-08-16;13:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NNQMRX;4561613853261034
+145;59;MR;SAKHAROV;DAVID;A;AF5399;LYON;TOULOUSE;;LYS;TLS;2017-08-17;06:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MNWFJI;5374409720652797
+146;41;MR;VADIM;DOBRYNIN;Y;MF9267;GUANGZHOU;MELBOURNE;;CAN;MEL;2017-08-18;09:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FZKTLR;4190115821825225
+147;66;MR;ERMOLAEV;SAMIR;Y;MF9811;AMSTERDAM;HANGZHOU;;AMS;HGH;2017-01-24;17:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KBBKRM;5723840729865293
+148;48;MRS;SOBOLEVA;XENIYA;Y;DL2347;MINNEAPOLIS/ST PAUL MN;CALGARY;;MSP;YYC;2017-08-19;11:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ITGAVM;9309637994892049
+149;76;MR;EVGENII;KONDRATOV;SU 822032921;SV3848;JEDDAH;KUALA LUMPUR;;JED;KUL;2017-08-20;21:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GGSOHO;1133201570624355
+150;36;MR;PLATON;RUMYANTSEV;SU 533367826;GA977;MADINAH;MEDAN;;MED;KNO;2017-08-21;21:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UBHHXQ;1224634560534300
+151;2;MR;DANIEL';LEVIN;Y;MF9062;BRUSSELS;ANTWERP;;BRU;ZWE;2017-08-22;06:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SBIDSL;4022412524376333
+152;57;MR;RUSTAM;EVSEEV;KE 992338853;KL1670;BARCELONA;AMSTERDAM;;BCN;AMS;2017-08-23;13:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EBAZQC;8653308446618458
+153;37;MR;AL'BERT;DEM'YANOV;Y;CZ509;SHANGHAI;SEOUL;;PVG;REA;2017-08-24;16:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZPCGPC;4882817912257726
+154;90;MRS;DMITRIEVA;ELMIRA;Y;DL2285;BOSTON MA;ORLANDO FL;;BOS;MCO;2017-08-25;20:02;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HBTGAV;4704988117884799
+155;11;MRS;STEFANIYA;MAL'TSEVA;Y;SU6563;SAINT PETERSBURG;SOCHI;;LED;AER;2017-08-26;08:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GHDZHL;3421542182653675
+156;76;MR;VALERIY;KOLPAKOV;Y;KL982;LONDON;AMSTERDAM;;LCY;AMS;2017-08-27;07:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZHOZAP;8855278976071203
+157;90;MR;LOBANOV;ILIA;Y;DL5497;BATON ROUGE LA;ATLANTA GA;;BTR;ATL;2017-08-28;16:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PRNLTW;7878798959867408
+158;47;MR;UL'YANOV;EMIL' M;Y;SU5496;YUZHNO;SEOUL;;UUS;REA;2017-01-25;10:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UKHCRP;6093041817092740
+159;56;MRS;SABINA;SEDOVA;Y;MU2174;XIAN;SHANTOU;;XIY;SWA;2017-08-29;21:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SIVWEQ;9705462361051476
+160;27;MR;ODISSEY;L MASLOV;Y;DL1448;ATLANTA GA;HOUSTON TX;;ATL;IAH;2017-08-30;13:48;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZXOWWL;7779210016448957
+161;67;MRS;EVELINA;DMITRIEVA;SU 659338268;MF8493;HANGZHOU;GUIYANG;;HGH;KWE;2017-08-31;14:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ESLOJH;2448664469168354
+162;9;MR;NAZAROV;GLEB;Y;AR1343;PUNTA DEL ESTE;BUENOS AIRES;;PDP;AEP;2017-09-01;21:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QXJKEU;7940774960556668
+163;86;MR;RUSTAM;FADEEV;Y;SU3965;HELSINKI;MOSCOW;;HEL;SVO;2017-09-02;23:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KUWRTG;5926220253271635
+164;76;MRS;KOROTKOVA;NIKA;Y;DL921;BUFFALO NY;ATLANTA GA;;BUF;ATL;2017-09-03;16:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LMICTD;3641485525538704
+165;68;MRS;POLINA;LEBEDEVA;Y;SV764;MADINAH;DELHI;;MED;DEL;2017-09-04;07:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DTQSIQ;4786266531322098
+166;52;MR;ANISIMOV;RINAT;Y;SU1403;YEKATERINBURG;MOSCOW;;SVX;SVO;2017-09-05;17:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DLJGUT;1590750860002113
+167;13;MRS;POLINA;ROGOVA;Y;MF8478;CHONGQING;HANGZHOU;;CKG;HGH;2017-09-06;09:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JNUHML;3709027827728495
+168;92;MR;SHAPOVALOV;MARK;Y;DL7235;BRISBANE;WELLINGTON;;BNE;WLG;2017-09-07;08:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NUAWDU;1457803775733506
+169;61;MRS;NAUMOVA;AMINA I;Y;CZ683;HARBIN;SEOUL;;HRB;REA;2017-01-26;08:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PQRGNZ;6843458982378863
+170;25;MR;ANDREY;MARKOV;J;SV3591;MADINAH;SURABAYA;;MED;SUB;2017-09-08;11:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SKGYQV;2313678666153306
+171;76;MR;ZUEV;ANTON G;J;MU5361;SHANGHAI;SHENZHEN;;PVG;SZX;2017-09-09;20:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GHMYPI;6964101325081258
+172;86;MR;STEPAN;RUBTCOV;FB 784674646;DL1962;DETROIT MI;LOS ANGELES CA;;DTW;LAX;2017-09-10;08:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DXUUAJ;1440865503321019
+173;46;MRS;KAS'YANOVA;MAYYA;DT 144817822;KL939;AMSTERDAM;DUBLIN;;AMS;DUB;2017-09-11;21:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MPIGUN;5648894970146433
+174;2;MR;DAVID;Y PIROGOV;Y;AZ353;PARIS;MILAN;;ORY;LIN;2017-09-12;19:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YSIPFT;0558714130053137
+175;22;MRS;IULIIA;KRAVTCOVA;FB 957649403;DL3405;CLEVELAND OH;DETROIT MI;;CLE;DTW;2017-09-13;17:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HQGYTW;9340642453390235
+176;82;MRS;SNEZHANA;A BELYAKOVA;Y;SU1521;MOSCOW;NOVYJ URENGOJ;;SVO;NUX;2017-09-14;17:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DULNAI;7509293123286460
+177;81;MR;LEV;I CHEBOTAREV;FB 778530957;CZ4531;MUDANJIANG;SEOUL;;MDG;REA;2017-09-15;12:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YETBIU;1000437526546038
+178;74;MRS;SURKOVA;POLINA;J;CZ4511;SHANGHAI;SEOUL;;PVG;REA;2017-09-16;13:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GSYHCA;3954725439150057
+179;37;MRS;MELANIIA;PETROVSKAIA;Y;AF442;PARIS;RIO DE JANEIRO;;CDG;GIG;2017-09-17;23:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;AOKVUN;1226238476082171
+180;10;MR;MALTSEV;EGOR;Y;SU5625;YUZHNO;KHABAROVSK;;UUS;KHV;2017-01-27;08:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CWQYJK;8063343671438069
+181;94;MRS;VINOKUROVA;VITALINA;Y;KL2309;NANTES;PARIS;;NTE;CDG;2017-09-18;06:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MNDUZK;9099288050709254
+182;28;MRS;AMALIYA;ANISIMOVA;J;AF6137;TOULOUSE;PARIS;;TLS;ORY;2017-09-19;17:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TTEFVN;3966249451143377
+183;88;MRS;CHEREPANOVA;SABINA;Y;MF8427;FUZHOU;KUNMING;;FOC;KMG;2017-09-20;08:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;RXZWYI;5191907485921304
+184;80;MR;BELIKOV;VADIM;Y;SU2104;MOSCOW;VILNIUS;;SVO;VNO;2017-09-21;07:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BZXVTI;8496744049613294
+185;29;MRS;MADINA;SHIRYAEVA;Y;CZ6625;ZHENGZHOU;XINZHOU;;CGO;WUT;2017-09-22;14:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;OQQOHE;2669364900304337
+186;26;MR;TIMOFEY;VOROB'EV;Y;AZ1735;CATANIA;ROME;;CTA;FCO;2017-09-23;21:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LFULIT;7933126370382668
+187;25;MRS;LEONT'EVA;ANTONINA;Y;RO9205;BUCHAREST;MOSCOW;;OTP;SVO;2017-09-24;00:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LEKMNW;0103894658941080
+188;98;MR;TIMUR;SHUBIN;SU 477034225;AF7655;BIARRITZ;PARIS;;BIQ;CDG;2017-09-25;12:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;OAMMWH;2275323123030962
+189;81;MRS;NEFEDOVA;ALEKSANDRA;DT 38086955;SV778;JEDDAH;CHENNAI;;JED;MAA;2017-09-26;21:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JVZEKH;5885341704416438
+190;55;MRS;MILANA;TARASOVA;J;MF8303;TIANJIN;HAIKOU;;TSN;HAK;2017-09-27;07:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ETEZSP;8655124328489644
+191;21;MR;BOLDYREV;VLADISLAV T;FB 964765716;AZ1391;ROME;GENOA;;FCO;GOA;2017-01-28;17:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DRDLVL;6346815352193370
+192;42;MRS;LIDIIA;PIMENOVA;Y;DL3724;GAINESVILLE FL;ATLANTA GA;;GNV;ATL;2017-09-28;11:36;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZWHMTS;2030504497364259
+193;95;MR;RINAT;OZEROV;Y;MU5723;JINGHONG;KUNMING;;JHG;KMG;2017-09-29;12:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QHCOHJ;8635113822764224
+194;68;MR;NOVIKOV;DAVID G;DT 587857635;MU9719;LIJIANG;SHANGHAI;;LJG;SHA;2017-09-30;09:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JWQVUJ;1333630633473042
+195;60;MR;ODISSEI;SIMONOV;P;SU1217;SAMARA;MOSCOW;;KUF;SVO;2017-10-01;06:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MYABYI;9278787053628681
+196;99;MRS;LOBANOVA;KSENIIA;DT 676643617;DL2739;SEATTLE WA;DENVER CO;;SEA;DEN;2017-10-02;07:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BGSBDD;2552628389620274
+197;65;MRS;SUVOROVA;NATALIA;P;CI2130;TAIPEI;SAPPORO;;TPE;CTS;2017-10-03;07:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YBOGAE;8353437936275448
+198;71;MRS;LYUDMILA;VOLOSHINA;FB 497108972;CZ6968;LANZHOU;URUMQI;;LHW;URC;2017-10-04;22:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ERROBA;0921677746046415
+199;28;MRS;LILIYA;TIKHOMIROVA;Y;SU2108;MOSCOW;VILNIUS;;SVO;VNO;2017-10-05;20:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CSMENC;0106831197051405
+200;28;MR;VORONOV;VLADIMIR;Y;DL3637;CHICAGO IL;DETROIT MI;;ORD;DTW;2017-10-06;10:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WAXJWX;1941816054601675
+201;64;MR;VSEVOLOD;VOLKOV;Y;CZ3275;NANNING;XIAN;;NNG;XIY;2017-10-07;15:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FZVRLN;9591953465804535
+202;38;MR;PARAMONOV;BOGDAN A;Y;SU4605;KHABAROVSK;OKHA;;KHV;OHH;2017-01-29;14:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WLICJB;1124914722418470
+203;74;MRS;SABINA;DANILOVA;Y;VN415;SEOUL;HANOI;;REA;HAN;2017-10-08;18:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QJETSQ;1351635769245522
+204;37;MR;YAROMIR;PAKHOMOV;Y;CZ3048;KUALA LUMPUR;GUANGZHOU;;KUL;CAN;2017-10-09;18:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TJQTOR;4591175143604510
+205;86;MR;VORONOV;SVIATOSLAV;SU 112093131;AF7031;NICE;NANTES;;NCE;NTE;2017-10-10;10:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SKERUG;2658543048986852
+206;26;MR;DAVID;SHCHEGLOV;Y;MU9451;KUNMING;SHANGHAI;;KMG;SHA;2017-10-11;09:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;AQAORH;4256639042805671
+207;52;MR;GORELOV;PETR T;Y;AF6211;NICE;PARIS;;NCE;ORY;2017-10-12;11:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TEEHQA;6045294595007412
+208;69;MR;ALEKSEY;IZMAYLOV;Y;MU9605;TAIYUAN;GUIYANG;;TYN;KWE;2017-10-13;12:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PAPFQE;9614428620783577
+209;86;MR;SAFONOV;TIMUR B;Y;RO719;BUCHAREST;IASI;;OTP;IAS;2017-10-14;19:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ASQOCW;8147042805662175
+210;1;MR;RINAT;S GOROKHOV;Y;KQ3149;PARIS;ROME;;CDG;FCO;2017-10-15;17:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ETQSHU;3417434235749312
+211;46;MR;MOISEEV;IGNAT;Y;CZ396;PENANG;GUANGZHOU;;PEN;CAN;2017-10-16;09:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EAZIXC;5487136530878911
+212;36;MR;VINOKUROV;RADMIR;FB 72958983;MU5293;TAIYUAN;BEIJING;;TYN;PEK;2017-10-17;11:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;AOHEJW;0992186388790207
+213;76;MRS;PIMENOVA;DAR'YA Y;FB 17819368;AR7357;MADRID;CORDOBA;;MAD;COR;2017-01-30;23:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HOHMSF;7769828303734083
+214;95;MR;RUDAKOV;ANDREY;Y;CZ6250;CHENGDU;DAQING;;CTU;DQA;2017-10-18;18:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EKIRDX;2380884085505212
+215;99;MRS;KRISTINA;TROFIMOVA;A;UX9402;TENERIFE;GRAN CANARIA;;TFN;LPA;2017-10-19;11:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MUIHLL;6928263703009002
+216;68;MRS;NOSKOVA;KAROLINA;Y;DL6209;NORFOLK VA;DETROIT MI;;ORF;DTW;2017-10-20;05:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZFRJWA;5425057235918181
+217;63;MR;FEDOR;ROMANOV;Y;DL1424;ATLANTA GA;DALLAS TX;;ATL;DAL;2017-10-21;09:26;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SESFAF;6550150773437289
+218;52;MR;PROKOFEV;SVIATOSLAV;Y;DL784;ATLANTA GA;MONTERREY;;ATL;MTY;2017-10-22;10:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FQAMKI;2124621531096326
+219;77;MRS;ANTONOVA;ALISA;Y;DL966;MIAMI FL;NEW YORK NY;;MIA;LGA;2017-10-23;11:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SQJLNT;5515461760058274
+220;38;MRS;ARTAMONOVA;MAR'YANA;DT 500175646;DL592;GUATEMALA CITY;LOS ANGELES CA;;GUA;LAX;2017-10-24;18:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IKOLIM;0544315327771071
+221;14;MRS;GALINA;MAKEEVA;DT 582063182;SU2475;NICE;MOSCOW;;NCE;SVO;2017-10-25;22:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DRPSCR;1142378829980967
+222;88;MRS;KAMILLA;MESHCHERIAKOVA;Y;MU9295;HANGZHOU;ZHENGZHOU;;HGH;CGO;2017-10-26;11:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JPHRVU;0166012910080333
+223;40;MR;MITROFANOV;VASILIY;Y;AZ7427;REGGIO DI CALABRIA;TURIN;;REG;TRN;2017-10-27;10:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UPFJWG;7875770453567311
+224;14;MRS;SHULGINA;MARIIA;Y;SU1337;ARKHANGELSK;MOSCOW;;ARH;SVO;2017-01-04;21:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JZRZYD;3401758738858423
+225;97;MR;DANILA;GALKIN;Y;SU1397;SYKTYVKAR;MOSCOW;;SCW;SVO;2017-01-31;06:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WICTVO;3029881627737536
+226;17;MR;SHCHEGLOV;NIKITA;SU 289660199;MU5812;SHANGHAI;KUNMING;;SHA;KMG;2017-10-28;19:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CGRFJS;5897476680207502
+227;65;MRS;SEMENOVA;SABINA Y;Y;DL3704;DETROIT MI;SAN ANTONIO TX;;DTW;SAT;2017-10-29;20:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VMQMOF;5342788087652870
+228;13;MR;GORBUNOV;DANIL;Y;CZ6390;WUHAN;GUIYANG;;WUH;KWE;2017-10-30;16:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LGVUGD;8385387458885672
+229;21;MRS;SEMINA;EKATERINA;Y;KQ601;MOMBASA;NAIROBI;;MBA;NBO;2017-10-31;08:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QSGGXV;2784547452944176
+230;47;MRS;ZIMINA;EVELINA T;J;DL2783;BOSTON MA;NEW YORK NY;;BOS;LGA;2017-11-01;12:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HIZELD;7185845897756613
+231;100;MR;ARTEMIY;MARKELOV;A;DL3480;KNOXVILLE TN;DETROIT MI;;TYS;DTW;2017-11-02;12:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VTFJLL;9378924335223169
+232;71;MRS;LUK'YANOVA;ALEXANDRA A;Y;AF1047;WARSAW;PARIS;;WAW;CDG;2017-11-03;17:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ICSJMH;7169880572413749
+233;65;MRS;OXANA;N LAPINA;Y;AM256;MEXICO CITY;CIUDAD DEL CARMEN;;MEX;CME;2017-11-04;06:01;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;XDJGBP;9640548621384699
+234;19;MRS;VOLKOVA;TAISIYA;Y;DL1937;BALTIMORE MD;DETROIT MI;;BWI;DTW;2017-11-05;05:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CEBQTP;0481697275905100
+235;64;MRS;MARIYA;GLUKHOVA;Y;DL1922;SEATTLE WA;PHOENIX AZ;;SEA;PHX;2017-11-06;11:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WXOONT;4184674936444506
+236;28;MR;SHEVELEV;LEV;Y;SU6588;SYKTYVKAR;SAINT PETERSBURG;;SCW;LED;2017-02-01;04:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JXUYNW;0114078386778025
+237;57;MR;KOZLOV;EDUARD;Y;DL2819;ORLANDO FL;DETROIT MI;;MCO;DTW;2017-11-07;16:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SNPUVQ;5261416244720734
+238;40;MR;NIKOLAY;KIREEV;Y;ME439;DOHA;BEIRUT;;DOH;BEY;2017-11-08;20:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;XJCUZS;4414313740827666
+239;90;MR;IAROSLAV;TUMANOV;Y;SV1551;JEDDAH;TABUK;;JED;TUU;2017-11-09;20:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;OCZQZG;1784282392465535
+240;90;MR;SAMIR;MALTCEV;Y;DL5507;DETROIT MI;TORONTO;;DTW;YYZ;2017-11-10;20:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KFRNHZ;5666662890858387
+241;86;MRS;MARIYA;A TITOVA;Y;AF6792;PARIS;CHENNAI;;CDG;MAA;2017-11-11;10:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CEJSLA;9378462610254178
+242;42;MRS;GORIUNOVA;MARINA;Y;DL746;LOS ANGELES CA;GUATEMALA CITY;;LAX;GUA;2017-11-12;11:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZUPSLD;4409627457802571
+243;58;MR;PANKOV;RAMIL;A;MU5668;YICHUN;SHANGHAI;;LDS;PVG;2017-11-13;13:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MCTNBD;2137247689761536
+244;17;MR;SAVELIY;ISAKOV;Y;CZ331;GUANGZHOU;CHANGSHA;;CAN;CSX;2017-11-14;21:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SOSNSY;8515566888568469
+245;60;MR;SVYATOSLAV;D POKROVSKIY;KE 727989679;SU1181;VOLGOGRAD;MOSCOW;;VOG;SVO;2017-11-15;03:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VHTLXO;8787894394045625
+246;34;MRS;EZHOVA;MILANA;A;CZ3539;GUANGZHOU;SHANGHAI;;CAN;SHA;2017-11-16;12:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LCUWGO;3948237497954573
+247;99;MRS;BLOKHINA;VERONIKA;Y;DL211;NEW YORK NY;TAMPA FL;;JFK;TPA;2017-02-02;19:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GOLIAT;7088875902237432
+248;86;MR;SIMONOV;MARAT;Y;CZ366;KUALA LUMPUR;GUANGZHOU;;KUL;CAN;2017-11-17;08:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BBKFEX;6581083539735107
+249;67;MR;VITALIY;FOKIN;Y;SU1486;MOSCOW;KRASNOYARSK;;SVO;KJA;2017-11-18;10:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QWIRXJ;8554454301916339
+250;70;MR;ALEXEEV;EGOR;A;VN318;DA NANG;TOKYO;;DAD;NRT;2017-11-19;00:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GVPYVN;2567293403002067
+251;51;MRS;LIDIYA;MOISEEVA;Y;CZ6931;URUMQI;KORLA;;URC;KRL;2017-11-20;12:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YQIPTA;4752427734034823
+252;33;MRS;ANZHELIKA;USOVA;KE 531849873;DL665;LOS ANGELES CA;LAS VEGAS NV;;LAX;LAS;2017-11-21;15:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UZJZDJ;9784116505931328
+253;71;MRS;AL'BINA;VOLOSHINA;Y;AF6223;NICE;PARIS;;NCE;ORY;2017-11-22;17:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ASPVHL;3397291296531695
+254;94;MRS;GRACHEVA;NELLI S;Y;DL2720;LOS ANGELES CA;SEATTLE WA;;LAX;SEA;2017-11-23;07:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FTLDVP;0652170383817697
+255;57;MR;PASTUKHOV;SVYATOSLAV;KE 662359177;SV38;WASHINGTON;RIYADH;;IAD;RUH;2017-11-24;17:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZPOOSF;8492210977411293
+256;93;MRS;GORYACHEVA;VERONIKA S;Y;AR1757;BUENOS AIRES;POSADAS;;AEP;PSS;2017-11-25;21:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KJAXNE;4875388392136317
+257;93;MR;GOLOVANOV;DMITRII;Y;DL3539;MINNEAPOLIS/ST PAUL MN;BOISE ID;;MSP;BOI;2017-11-26;11:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JCMKZW;0762361762268625
+258;74;MRS;VIOLETTA;KLIMOVA;FB 857327857;KQ3024;PARIS;FRANKFURT;;CDG;FRA;2017-02-03;07:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VTSAWP;1552988856197873
+259;35;MR;GERMAN;SYCHEV;Y;AF4587;POINTE A PITRE;SAINT LUCIA;;PTP;SLU;2017-11-27;15:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YGANQR;4403940575962507
+260;78;MRS;MADINA;EVDOKIMOVA;Y;AF7721;NANTES;PARIS;;NTE;CDG;2017-11-28;06:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PKXFAB;3406069833713008
+261;3;MRS;OSIPOVA;SVETLANA;Y;DL1228;SALT LAKE CITY UT;LOS ANGELES CA;;SLC;LAX;2017-11-29;10:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZOZQDM;3146078827636371
+262;70;MR;OVCHINNIKOV;FILIPP;Y;DL505;MINNEAPOLIS/ST PAUL MN;BISMARCK ND;;MSP;BIS;2017-11-30;22:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DWIBAJ;3834507156536168
+263;50;MR;TRET'YAKOV;VASILIY;FB 786876270;KQ512;BAMAKO;DAKAR;;BKO;DSS;2017-12-01;13:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GXLIOM;5476705517609897
+264;55;MR;IGNAT;BIRIUKOV;KE 591805738;CZ687;CHANGCHUN;SEOUL;;CGQ;REA;2017-12-02;09:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DQYGCP;4669324538222370
+265;1;MRS;ALISA;Y ZVEREVA;Y;CZ6178;CHANGSHA;GUANGZHOU;;CSX;CAN;2017-12-03;21:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QZMDTU;9939216591018348
+266;67;MR;ZUBOV;DANIL;Y;DL5127;ATLANTA GA;CHATTANOOGA TN;;ATL;CHA;2017-12-04;14:09;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YJADYK;7646672078498011
+267;1;MR;MALININ;DANIIL;P;DL6215;ALBANY NY;DETROIT MI;;ALB;DTW;2017-12-05;09:34;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UQLMXS;8497155579425770
+268;26;MR;DEMID;DROZDOV;Y;AF7638;PARIS;RENNES;;CDG;RNS;2017-12-06;21:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VHAKHE;1065484503034030
+269;100;MRS;BEREZINA;VIKTORIYA;Y;AF4901;MOSCOW;PARIS;;SVO;CDG;2017-02-04;07:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MYSYQD;6601745674643574
+270;1;MR;SPIRIDONOV;ARSEN;A;MF8008;HONG KONG;WUYISHAN;;SAR;WUS;2017-12-07;18:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QPOMZL;8341755097926283
+271;60;MR;LEVIN;TIKHON;KE 31567019;DL1608;MIAMI FL;ATLANTA GA;;MIA;ATL;2017-12-08;13:43;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GVFPBE;5015297622724439
+272;37;MR;EGOR;CHISTIAKOV;Y;SV1887;ABHA;RIYADH;;AHB;RUH;2017-12-09;13:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IGMFUA;7976940101933048
+273;96;MRS;GULIAEVA;LILIIA;FB 330812214;AZ1790;PALERMO;MILAN;;PMO;LIN;2017-12-10;19:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BQGJYG;3641238267082914
+274;40;MR;AMIR;NOSKOV;A;VN287;HANOI;HO CHI MINH CITY;;HAN;SGN;2017-12-11;21:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EMECAG;1389141785779901
+275;38;MRS;VERA;SAMSONOVA;Y;KE5808;SHANGHAI;SEOUL;;PVG;REA;2017-12-12;07:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HRWVZW;3114794959066794
+276;18;MRS;DARINA;DMITRIEVA;Y;RO710;IASI;BUCHAREST;;IAS;OTP;2017-12-13;05:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WNHHMW;0316829598172491
+277;1;MRS;DAR'YA;S ANDREEVA;Y;SU1731;PETROPAVLOVSK;MOSCOW;;PKC;SVO;2017-12-14;13:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QIEKHB;2332793727142603
+278;23;MR;STEPAN;SINITSYN;SU 684311589;MU2758;KUNMING;NANJING;;KMG;NKG;2017-12-15;19:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YPAMAF;6908740142301437
+279;31;MR;OVSYANNIKOV;YAROMIR;Y;DL1455;SEATTLE WA;SAN FRANCISCO CA;;SEA;SFO;2017-12-16;16:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MAOVLD;0478896217271723
+280;70;MRS;VIOLETTA;TOKAREVA;FB 870630356;SU2468;MOSCOW;BUDAPEST;;SVO;BUD;2017-02-05;20:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EWVRHY;2889305906766769
+281;58;MR;KONSTANTINOV;YURIY E;Y;DL3688;NEW YORK NY;MILWAUKEE WI;;LGA;MKE;2017-12-17;08:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PZIJHR;3504268709714503
+282;7;MR;SAVVA;A ERMAKOV;Y;DL6009;DETROIT MI;NEW YORK NY;;DTW;JFK;2017-12-18;14:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ROLSQK;5500982455531061
+283;96;MRS;IRINA;RUDAKOVA;Y;AM693;TORONTO;MEXICO CITY;;YYZ;MEX;2017-12-19;09:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GKMGDD;7809806839863012
+284;56;MRS;UVAROVA;SOFIIA;Y;SU330;MOSCOW;ULAANBAATAR;;SVO;ULN;2017-12-20;19:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KNESSN;7027473079778139
+285;85;MR;ALEXEY;BASHIROV;Y;MU2276;YULIN;FUZHOU;;UYN;FOC;2017-12-21;17:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LOZLLG;2050481997269914
+286;52;MRS;GORELOVA;VASILISA;Y;MF8266;ZUNYI;HANGZHOU;;WMT;HGH;2017-12-22;13:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WGGPTD;3379670780118103
+287;54;MRS;LOGINOVA;AMINA;Y;DL3481;DETROIT MI;EVANSVILLE IN;;DTW;EVV;2017-12-23;20:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CRLVEO;7791072925085324
+288;59;MRS;NATALIA;AVDEEVA;Y;DL2167;ATLANTA GA;PHOENIX AZ;;ATL;PHX;2017-12-24;21:32;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VUOLPF;1965485356775606
+289;27;MRS;ALEKSANDRA;TITOVA;FB 164179355;CI9846;KO SAMUI;BANGKOK;;USM;BKK;2017-12-25;13:55;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DSQSJC;9938611560200276
+290;58;MRS;IANA;GULIAEVA;Y;KL3109;TBILISI;AMSTERDAM;;TBS;AMS;2017-12-26;05:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;LJIYQW;6385727946830327
+291;62;MRS;ASTAKHOVA;MELANIYA S;Y;SU5606;VLADIVOSTOK;YUZHNO;;VVO;UUS;2017-02-06;12:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;OSRNDW;0377897890486393
+292;79;MR;KAPUSTIN;SAVVA A;J;VN942;YANGON;HO CHI MINH CITY;;RGN;SGN;2017-12-27;11:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FJUDOU;0315062357879969
+293;19;MR;BOGDAN;EZHOV;A;KQ255;DZAOUDZI;NAIROBI;;DZA;NBO;2017-12-28;10:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HNPCIF;2913853605700049
+294;71;MRS;STOLYAROVA;VASILINA;Y;DL5122;ATLANTA GA;SPRINGFIELD MO;;ATL;SGF;2017-12-29;08:56;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SVFYXR;9348991590400308
+295;95;MRS;SERGEEVA;LIDIIA;FB 549288904;KE867;SEOUL;ULAANBAATAR;;REA;ULN;2017-12-30;13:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UAQIIB;2820302056612182
+296;10;MR;PARFENOV;STANISLAV;Y;DL1916;MINNEAPOLIS/ST PAUL MN;SAN DIEGO CA;;MSP;SAN;2017-12-31;11:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;REHZNE;7745416973964779
+297;84;MR;MARK;BULGAKOV;Y;VN321;OSAKA;HO CHI MINH CITY;;KIX;SGN;2018-01-01;10:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;OMDWCK;4532895033787183
+298;83;MR;SEMEN;YASHIN;A;CZ7209;MOSCOW;GENEVA;;SVO;GVA;2017-02-07;08:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BFYKOR;9611345568070688
+299;25;MRS;IGNATOVA;SOFIYA N;KE 149025355;SV555;DUBAI;RIYADH;;DXB;RUH;2017-02-08;18:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VMWONK;6284156963547653
+300;46;MR;MARSEL';GORDEEV;DT 70686571;SU320;MOSCOW;MALE;;SVO;MLE;2017-02-09;21:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BGJTXS;6661718720042729
+301;84;MRS;MAYYA;NIKULINA;Y;SU6023;SAINT PETERSBURG;MOSCOW;;LED;VKO;2017-01-05;19:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TONREZ;9398520256248518
+302;4;MRS;GOLOVINA;ANGELINA;Y;AZ7210;MILAN;SAINT PETERSBURG;;MXP;LED;2017-02-10;13:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HZMGBW;7382733278652378
+303;56;MRS;ELENA;PANTELEEVA;Y;SU6036;MOSCOW;SAINT PETERSBURG;;VKO;LED;2017-02-11;20:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NRNRFN;4781202173021007
+304;85;MRS;EVA;SHMELEVA;Y;KE5988;YUZHNO;SEOUL;;UUS;REA;2017-02-12;10:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VQQYDF;8630202781949152
+305;95;MRS;IAROSLAVA;IGNATOVA;KE 39262219;SU5464;VLADIVOSTOK;SEOUL;;VVO;REA;2017-02-13;18:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NHMSJW;5592782548802065
+306;38;MR;YAROMIR;T CHERNYSHEV;FB 386229679;AZ7002;MILAN;KUWAIT;;MXP;KWI;2017-02-14;14:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BAWRHY;8231892890400656
+307;54;MR;RAKOV;SVIATOSLAV;J;AZ1699;VENICE;CATANIA;;VCE;CTA;2017-02-15;10:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NUCTDD;9682557515882449
+308;16;MRS;ANGELINA;Z RUDAKOVA;Y;RO371;BUCHAREST;BRUSSELS;;OTP;BRU;2017-02-16;07:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WXZXZS;0771248845362579
+309;85;MRS;VARVARA;M TARASOVA;Y;DL9010;SEOUL;SEATTLE WA;;REA;SEA;2017-02-17;15:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JBZVBH;2821477053385661
+310;26;MRS;SAMIRA;OZEROVA;J;OK967;KOSICE;BRATISLAVA;;KSC;BTS;2017-02-18;20:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GDAVJV;5827059016330823
+311;7;MRS;MAIIA;STAROSTINA;Y;UX3118;ROME;MADRID;;FCO;MAD;2017-02-19;14:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YMBHES;4793439482999200
+312;42;MR;IAROMIR;FEDOTOV;SU 62151714;SU43;SAINT PETERSBURG;MOSCOW;;LED;SVO;2017-01-06;14:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IBXOCT;0454489245616418
+313;53;MR;GLUKHOV;LEONID;Y;SU6412;UFA;SAINT PETERSBURG;;UFA;LED;2017-02-20;06:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YEQEZS;1574511590881920
+314;38;MR;TIKHONOV;DANIEL';Y;SU520;MOSCOW;DUBAI;;SVO;DXB;2017-02-21;07:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CYUVIV;7175999663951061
+315;33;MRS;VERONIKA;T EFIMOVA;FB 698762897;DL65;ROME;ATLANTA GA;;FCO;ATL;2017-02-22;10:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KCMRMW;2586738648147452
+316;0;MR;IVAN;ELISEEV;A;UX3906;ISTANBUL;MADRID;;IST;MAD;2017-02-23;14:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TXJCCZ;9957981358241942
+317;89;MR;SAVIN;TAMERLAN;Y;KL1126;COPENHAGEN;AMSTERDAM;;CPH;AMS;2017-02-24;09:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WEJCOP;9344461317218956
+318;33;MR;SURKOV;DAVID;Y;SU6176;SIMFEROPOL;MOSCOW;;SIP;SVO;2017-02-25;15:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BSCTCH;0775146360409345
+319;29;MRS;KUKUSHKINA;SVETLANA;SU 80638361;KQ3226;PARIS;MANCHESTER;;CDG;MAN;2017-02-26;08:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;DSIVKH;7977611972203339
+320;24;MR;ARTUR;S ZHAROV;FB 707866418;SU1206;MOSCOW;SAMARA;;SVO;KUF;2017-02-27;00:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QJLETK;6102896909401080
+321;70;MRS;MARINA;GAVRILOVA;KE 872721498;CZ340;GUANGZHOU;HAIKOU;;CAN;HAK;2017-02-28;15:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GUNBAA;1989677840825765
+322;9;MRS;DEGTYAREVA;AMALIYA I;Y;AZ7795;MILAN;RIGA;;MXP;RIX;2017-03-01;10:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GVDHSX;9244482534816525
+323;72;MRS;NAUMOVA;ESENIYA;Y;DL469;TEL AVIV;NEW YORK NY;;TLV;JFK;2017-01-07;22:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JLZQLT;9463459928173654
+324;8;MR;KLIUEV;ALBERT;Y;OK480;PRAGUE;HELSINKI;;PRG;HEL;2017-03-02;11:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;KNNHAD;9064851147222173
+325;68;MRS;NIKA;GLUSHKOVA;Y;MF3509;QINGDAO;DALIAN;;TAO;DLC;2017-03-03;10:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;RVMKEG;5897001976562467
+326;94;MRS;VIOLETTA;PROKHOROVA;Y;GA529;BANJARMASIN;JAKARTA;;BDJ;CGK;2017-03-04;18:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QEKMVV;1175192891961616
+327;47;MRS;CHERNYKH;ANTONINA;KE 353796104;DL1371;WASHINGTON;ATLANTA GA;;IAD;ATL;2017-03-05;19:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BHPISC;2214439078850174
+328;18;MRS;TROITSKAYA;LILIYA;A;SU5603;KHABAROVSK;VLADIVOSTOK;;KHV;VVO;2017-03-06;08:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QJHUSJ;4318992729905379
+329;99;MR;RODIONOV;LEONID;KE 63544874;DL313;MIAMI FL;NEW YORK NY;;MIA;JFK;2017-03-07;19:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;SEVBVO;9240985245076651
+330;59;MRS;ALEKSANDRA;TOLKACHEVA;FB 41429745;MU2394;XIAN;NINGBO;;XIY;NGB;2017-03-08;21:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WBVOXN;5365575878423495
+331;76;MR;YAROMIR;R KOROLEV;Y;CZ6184;CHENGDU;BEIJING;;CTU;PEK;2017-03-09;16:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;UWRVKX;5635794579353109
+332;68;MRS;KORCHAGINA;VALENTINA;Y;SU6018;MOSCOW;SAINT PETERSBURG;;VKO;LED;2017-03-10;10:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;FKGGIQ;8818754842571794
+333;5;MRS;MALININA;IASMINA;Y;KL1654;AMSTERDAM;VENICE;;AMS;VCE;2017-03-11;12:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GJANUT;1981061412693873
+334;92;MRS;EKATERINA;MAYOROVA;Y;SU2336;MOSCOW;STUTTGART;;SVO;STR;2017-01-08;08:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;JXGMHO;7959014759847115
+335;86;MRS;MIROSLAVA;V SEMENOVA;SU 541209834;SU6284;YUZHNO;MOSCOW;;UUS;SVO;2017-03-12;11:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;USMLKF;6990392429172461
+336;80;MRS;CHERNYKH;MARGARITA;Y;SU1355;VORONEZH;MOSCOW;;VOZ;SVO;2017-03-13;21:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;HNCWSO;3499754609174164
+337;78;MR;MAKSIMOV;VLADISLAV;Y;MU592;MOSCOW;SHANGHAI;;SVO;PVG;2017-03-14;18:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NSYAKZ;8384453205735880
+338;15;MR;NIKIFOROV;IAROMIR;A;KE645;SEOUL;SINGAPORE;;REA;SIN;2017-03-15;18:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;TNMYJZ;2280605945749256
+339;22;MR;SOBOLEV;SERGEY;Y;SU1537;TOMSK;MOSCOW;;TOF;SVO;2017-03-16;10:40;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;YATIXY;9248809439445640
+340;62;MR;PAKHOMOV;OLEG;J;AF7006;LILLE;MARSEILLE;;LIL;MRS;2017-03-17;07:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PZDPGQ;1501509069094881
+341;21;MR;ZHAROV;PLATON A;FB 884556993;SU1180;MOSCOW;VOLGOGRAD;;SVO;VOG;2017-03-18;22:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NSJNGQ;5274206497242737
+342;0;MRS;LIUBOV;FOKINA;Y;UX4647;BARCELONA;ALMERIA;;BCN;LEI;2017-03-19;10:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GUCURZ;0601450740865237
+343;51;MR;BOGDAN;BONDAREV;KE 626237082;DL2663;NEW YORK NY;ATLANTA GA;;JFK;ATL;2017-03-20;13:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CIIXAG;6671495566852313
+344;23;MR;GOROKHOV;SAVELIY N;Y;MU2115;XIAN;BEIJING;;XIY;PEK;2017-03-21;18:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QIBXSK;4868570876354985
+345;89;MRS;OLESYA;M LEONOVA;Y;CI9070;PRAGUE;AMSTERDAM;;PRG;AMS;2017-01-09;06:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MYOROZ;6151942751592330
+346;32;MR;MALAKHOV;ANATOLIY;J;AF6127;PARIS;TOULOUSE;;ORY;TLS;2017-03-22;13:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;AAIAMW;1594117201719500
+347;63;MRS;ANZHELIKA;BELKINA;Y;AR7201;ROME;BUENOS AIRES;;FCO;EZE;2017-03-23;21:45;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;GTKYZO;5175320198343948
+348;37;MRS;GOROKHOVA;ELINA;Y;CZ6117;BEIJING;YINCHUAN;;PEK;INC;2017-03-24;19:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;EJGAYY;6108401028832200
+349;40;MRS;SAMIRA;MAKSIMOVA;FB 211817611;VN461;NHA TRANG;SHANGHAI;;CXR;PVG;2017-03-25;04:00;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IEMXIS;9593007797349211
+350;58;MR;ILIN;EDUARD;Y;SU6413;SAINT PETERSBURG;UFA;;LED;UFA;2017-03-26;14:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;MMIYHR;7502087438326847
+351;93;MRS;POLINA;KUZINA;A;AF1850;PARIS;COPENHAGEN;;CDG;CPH;2017-03-27;12:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CXTNYK;7107802387223343
+352;45;MRS;ANTONINA;RIABININA;A;AF5052;PARIS;MALAGA;;CDG;AGP;2017-03-28;10:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;VFGNPQ;1466869724480903
+353;99;MRS;PIROGOVA;VERA;Y;AF1896;PARIS;CASABLANCA;;CDG;CMN;2017-03-29;07:10;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;NRDRLT;9358021737355470
+354;9;MR;LEV;AGAFONOV;SU 193497342;KE1601;SEOUL;SEOUL;;REA;REA;2017-03-30;06:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QCSPIE;4357593264588488
+355;51;MRS;AMELIYA;SVIRIDOVA;Y;SU6635;SAINT PETERSBURG;PARIS;;LED;CDG;2017-03-31;10:05;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZNNTKQ;9393083709071153
+356;8;MRS;PIMENOVA;OLGA;Y;AZ7219;MOSCOW;VERONA;;SVO;VRN;2017-01-10;07:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PBXNIZ;4024358196233127
+357;31;MR;ANDRIANOV;YAROMIR A;FB 108689831;SU2405;ROME;MOSCOW;;FCO;SVO;2017-04-01;23:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;QSERBE;9734909716529342
+358;9;MR;ROMAN;LARIONOV;Y;SU1863;YEREVAN;MOSCOW;;EVN;SVO;2017-04-02;21:35;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;ZSESIS;2302574272560101
+359;98;MRS;MILANA;ZVIAGINTCEVA;KE 614859924;MU759;SHANGHAI;PHNOM PENH;;PVG;PNH;2017-04-03;18:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BTKWSI;8800359283784967
+360;20;MR;VITALIY;VLADIMIROV;SU 575927176;MU9470;YANTAI;WENZHOU;;YNT;WNZ;2017-04-04;17:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;CILFAL;0055940912684668
+361;50;MR;KIREEV;NIKOLAY R;Y;AZ2082;ROME;MILAN;;FCO;LIN;2017-04-05;16:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;WTVEAP;4533780222742917
+362;100;MR;DAVID;NIKOLAEV;Y;RO238;BUDAPEST;BUCHAREST;;BUD;OTP;2017-04-06;19:30;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IZUSPJ;9428908527647457
+363;42;MR;ROZHKOV;RAMIL;Y;SU1482;MOSCOW;KRASNOYARSK;;SVO;KJA;2017-04-07;00:15;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;POFVPI;8366391494374150
+364;43;MRS;BORODINA;AL'BINA;Y;CZ3180;GUANGZHOU;SHANGHAI;;CAN;SHA;2017-04-08;21:50;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;IBTIPM;9280697498411131
+365;32;MRS;ALESHINA;AMELIYA;FB 758405213;AF1583;PRAGUE;PARIS;;PRG;CDG;2017-04-09;19:25;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;BTBULX;1527911009189876
+366;99;MR;GUSEV;DANIL;Y;KE5942;TASHKENT INTERNATIONAL;SEOUL;;TAS;REA;2017-04-10;22:20;Operated by Some Other Airline;Boarding is ended 20 minutes before departure time;;PXJSSY;6345570848987623
