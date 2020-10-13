@@ -66,4 +66,4 @@ if __name__ == '__main__':
                         time_from = time[0]
                         time_to = time[1]
                     spamwriter.writerow(data_from + data_to +
-                                        [time_from, time_to]+[''.join(trip[5:len(trip)-6])]+[trip[6], trip[7]]+[trip[8], trip[9], trip[10]])
+                                        [time_from, time_to]+[''.join(trip[5:len(trip)-5])]+[trip[6], trip[7]]+trip[-5:])
