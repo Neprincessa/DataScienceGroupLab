@@ -1,4 +1,4 @@
-CREATE TABLE SkyTeamExchange (
+CREATE TABLE public."SkyTeamExchange" (
 	dep_date DATE NULL,
 	flight_number VARCHAR(30) NULL,
 	dep_code VARCHAR(30) NULL,
