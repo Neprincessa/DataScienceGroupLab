@@ -43,7 +43,7 @@ if __name__ == '__main__':
     spamwriter = csv.writer(csv_file, delimiter=';',
                             quoting=csv.QUOTE_MINIMAL)
     spamwriter.writerow(["from_city", "from_country", "from_aeroport", "to_city", "to_country",
-                         "to_aeroport", "days", "depTime", "arrTime", "flight", "aircraft", "travelTime"])
+                         "to_aeroport", "date_from", "date_to", "days", "depTime", "arrTime", "flight", "aircraft", "travelTime"])
 
     next_str = ''
     for line in input_file:
@@ -66,4 +66,4 @@ if __name__ == '__main__':
                         time_from = time[0]
                         time_to = time[1]
                     spamwriter.writerow(data_from + data_to +
-                                        [time_from, time_to]+[''.join(trip[5:len(trip)-5])]+[trip[6], trip[7]]+trip[-5:])
+                                        [time_from, time_to]+[''.join(trip[5:len(trip)-5])]+trip[-5:])
