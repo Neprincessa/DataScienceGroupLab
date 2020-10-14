@@ -1,6 +1,6 @@
 CREATE TABLE public."YourBoardingPassDotAero" (
-	uid NUMBER(38) NOT NULL,
-	sequence NUMBER(38) NULL,
+	uid INTEGER NOT NULL,
+	sequence INTEGER NULL,
 	sex VARCHAR(30) NULL,
 	first_name VARCHAR(30) NULL,
 	last_name VARCHAR(30) NULL,
