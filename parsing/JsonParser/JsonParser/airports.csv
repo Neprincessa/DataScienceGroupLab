@@ -1,0 +1,1130 @@
+AirportID;Name;Abbr;Country
+1;Pittsburgh PA;PIT;United States of
+2;Boston MA;BOS;United States of
+3;Detroit MI;DTW;United States of
+4;Green Bay WI;GRB;United States of
+5;New York NY;LGA;United States of
+6;Warsaw;WAW;Poland
+7;Moscow;SVO;Russian Federation
+8;Atlanta GA;ATL;United States of
+9;Fayetteville AR;XNA;United States of
+10;Fort Lauderdale FL;FLL;United States
+11;Wilmington NC;ILM;United States of
+12;Jacksonville NC;OAJ;United States of
+13;Sacramento CA;SMF;United States of
+14;Paris;CDG;France
+15;Evansville IN;EVV;United States of
+16;Birmingham AI;BHM;United States of
+17;Shreveport LA;SHV;United States of
+18;Tokyo;NRT;Japan
+19;Shanghai;PVG;China
+20;Taipei;TPE;Taiwan
+21;Singapore;SIN;Singapore
+22;Vladivostok;VVO;Russian Federation
+23;Petropavlovsk;PKC;Russian Federation
+24;Guangzhou;CAN;China
+25;Anqing;AQG;China
+26;Hohhot;HET;China
+27;Tongliao;TGO;China
+28;Seoul;rea;Ko
+29;Hangzhou;HGH;China
+30;Taiyuan;TYN;China
+31;Blagoveshchensk;BQS;Russian
+32;Ho Chi Minh City;SGN;Vietnam
+33;Hong Kong;SAR;
+34;Helsinki;HEL;Finland
+35;Prague;PRG;Czech Republic
+36;Kemerovo;KEJ;Russian Federation
+37;Rostov;ROV;Russian Federation
+38;Madinah;MED;Saudi Arabia
+39;Dammam;DMM;Saudi Arabia
+40;Delhi;DEL;India
+41;Amsterdam;AMS;Netherlands
+42;Basel/Mulhouse;BSL;France
+43;Riyadh;RUH;Saudi Arabia
+44;Abu Dhabi;AUH;United Arab Emirates
+45;Madrid;MAD;Spain and Canary Islands
+46;Saratov;RTW;Russian Federation
+47;Nantes;NTE;France
+48;Lille;LIL;France
+49;Nice;NCE;France
+50;Minsk;MSQ;Belarus
+51;Frankfurt;FRA;Germany
+52;Strasbourg;SXB;France
+53;Rome;FCO;Italy
+54;Brest;BES;France
+55;Lyon;LYS;France
+56;Metz/Nancy;ETZ;France
+57;Marseille;MRS;France
+58;Irkutsk;IKT;Russian Federation
+59;Nizhny Novgorod;GOJ;Russian
+60;Mineralnye Vody;MRV;Russian
+61;Geneva;GVA;Switzerland
+62;Baton Rouge LA;BTR;United States of
+63;Nizhnekamsk;NBC;Russian Federation
+64;London;LHR;United Kingdom
+65;Madison WI;MSN;United States of
+66;Minneapolis/St Paul MN;MSP;United
+67;Riga;RIX;Latvia
+68;New York NY;JFK;United States of
+69;Phoenix AZ;PHX;United States of
+70;Berlin;TXL;Germany
+71;Paris;ORY;France
+72;Ajaccio;AJA;France
+73;Khabarovsk;KHV;Russian Federation
+74;Nizhnevartovsk;NJC;Russian
+75;Quimper;UIP;France
+76;Toulouse;TLS;France
+77;Basel/Mulhouse;MLH;France
+78;Kazan;KZN;Russian Federation
+79;Nogliki;NGK;Russian Federation
+80;Bucharest;OTP;Romania
+81;Cluj;CLJ;Romania
+82;Marsa Alam;RMF;Egypt
+83;Budapest;BUD;Hungary
+84;Copenhagen;CPH;Denmark
+85;Chisinau;ova;Mold
+86;Iasi;IAS;Romania
+87;Tomsk;TOF;Russian Federation
+88;Cape Town;CPT;South Africa
+89;Beirut;BEY;Lebanon
+90;Yerevan;EVN;Armenia
+91;Bordeaux;BOD;France
+92;Nairobi;NBO;Kenya
+93;Magadan;GDX;Russian Federation
+94;Casablanca;CMN;Morocco
+95;Stavropol;STW;Russian Federation
+96;Nanchong;NAO;China
+97;Shenyang;SHE;China
+98;Sanya;SYX;China
+99;Tokyo;HND;Japan
+100;Quanzhou;JJN;China
+101;Doha;DOH;Qatar
+102;Sochi;AER;Russian Federation
+103;Chaoyang;CHG;China
+104;Beijing;PEK;China
+105;Yekaterinburg;SVX;Russian Federation
+106;Hami;HMI;China
+107;Almaty;ALA;Kazakhstan
+108;Saint Petersburg;LED;Russian
+109;Wenzhou;WNZ;China
+110;Wuhan;WUH;China
+111;Urumqi;URC;China
+112;Berlin;SXF;Germany
+113;Voronezh;VOZ;Russian Federation
+114;Nagasaki;NGS;Japan
+115;Bologna;BLQ;Italy
+116;Novosibirsk;OVB;Russian Federation
+117;Okha;OHH;Russian Federation
+118;Mexico City;MEX;Mexico
+119;Guadalajara;GDL;Mexico
+120;Lincoln NE;LNK;United States of
+121;Fort Wayne IN;FWA;United States of
+122;Dalian;DLC;China
+123;Barcelona;BCN;Spain and Canary
+124;Cancun;CUN;Mexico
+125;Miami FL;MIA;United States of
+126;Chihuahua;CUU;Mexico
+127;Samara;KUF;Russian Federation
+128;Magnitogorsk;MQF;Russian Federation
+129;Omsk;OMS;Russian Federation
+130;Dubai;DXB;United Arab Emirates
+131;Hanoi;HAN;Vietnam
+132;Kunming;KMG;China
+133;Wuxi;WUX;China
+134;Qingdao;TAO;China
+135;Zhuhai;ZUH;China
+136;Changchun;CGQ;China
+137;Deqen;DIG;China
+138;Lanzhou;LHW;China
+139;Knoxville TN;TYS;United States of
+140;Yuzhno;UUS;Russian Federation
+141;Oklahoma City OK;OKC;United States
+142;Quito;UIO;Ecuador
+143;Stuttgart;STR;Germany
+144;Montgomery AI;MGM;United States of
+145;Milan;MXP;Italy
+146;Birmingham;BHX;United Kingdom
+147;Valencia;VLC;Spain and Canary Islands
+148;Zhengzhou;CGO;China
+149;Catania;CTA;Italy
+150;Yangon;RGN;Myanmar
+151;Bangkok;BKK;Thailand
+152;Phuket;HKT;Thailand
+153;Tunis;TUN;Tunisia
+154;Siem Reap;REP;Cambodia
+155;Ko Samui;USM;Thailand
+156;Trat;TDX;Thailand
+157;Kansas City MO;MCI;United States of
+158;Seattle WA;SEA;United States of
+159;Portland OR;PDX;United States of
+160;Omaha NE;OMA;United States of
+161;Spokane WA;GEG;United States of
+162;Los Angeles CA;LAX;United States of
+163;Fuzhou;FOC;China
+164;Yuncheng;YCU;China
+165;Xiamen;XMN;China
+166;Haikou;HAK;China
+167;Shantou;SWA;China
+168;Zhangjiajie;DYG;China
+169;Harbin;HRB;China
+170;Melbourne;MEL;Australia
+171;Sydney;SYD;Australia
+172;Liuzhou;LZH;China
+173;Astrakhan;ASF;Russian Federation
+174;Belgrade;BEG;Serbia
+175;Shanghai;SHA;China
+176;Guilin;KWL;China
+177;Jeddah;JED;Saudi Arabia
+178;Jakarta;CGK;Indonesia
+179;Changsha;CSX;China
+180;Lianyungang;LYG;China
+181;Nanjing;NKG;China
+182;Houston TX;IAH;United States of
+183;Biarritz;BIQ;France
+184;Munich;MUC;Germany
+185;Bilbao;BIO;Spain and Canary Islands
+186;Malaga;AGP;Spain and Canary Islands
+187;Nagoya;NGO;Japan
+188;Chengdu;CTU;China
+189;Surabaya;SUB;Indonesia
+190;Semarang;SRG;Indonesia
+191;Yanbu Al Bahr;YNB;Saudi Arabia
+192;Datong;DAT;China
+193;Tirana;TIA;Albania
+194;Tyumen;TJM;Russian Federation
+195;Turin;TRN;Italy
+196;Podgorica;TGD;Montenegro
+197;Vilnius;VNO;Lithuania
+198;Sofia;SOF;Bulgaria
+199;Roanoke VA;ROA;United States of
+200;Calgary;YYC;Canada
+201;Columbus MS;GTR;United States of
+202;Chicago IL;ORD;United States of
+203;Jacksonville FL;JAX;United States of
+204;Milwaukee WI;MKE;United States of
+205;West Palm Beach FL;PBI;United
+206;Venice;VCE;Italy
+207;Timisoara;TSR;Romania
+208;Abakan;ABA;Russian Federation
+209;Xian;XIY;China
+210;Jiayuguan;JGN;China
+211;Brussels;BRU;Belgium
+212;Verona;VRN;Italy
+213;Alicante;ALC;Spain and Canary Islands
+214;Bogota;BOG;Colombia
+215;Istanbul;IST;Turkey
+216;Salt Lake City UT;SLC;United States of
+217;Moscow;VKO;Russian Federation
+218;Cincinnati OH;CVG;United States of
+219;San Jose Del Cabo;SJD;Mexico
+220;Washington;DCA;United States of
+221;Raleigh/Durham NC;RDU;United States
+222;Makhachkala;MCX;Russian Federation
+223;Providence RI;PVD;United States of
+224;Tampa FL;TPA;United States of
+225;Krasnodar;KRR;Russian Federation
+226;Cairo;CAI;Egypt
+227;Murmansk;MMK;Russian Federation
+228;Anapa;AAQ;Russian Federation
+229;Shenzhen;SZX;China
+230;Kota Kinabalu;BKI;Malaysia
+231;Da Nang;DAD;Vietnam
+232;London;LCY;United Kingdom
+233;Milan;LIN;Italy
+234;Burgas;BOJ;Bulgaria
+235;Naples;NAP;Italy
+236;Male;MLE;Maldives
+237;Colombo;CMB;Sri Lanka
+238;Edinburgh;EDI;United Kingdom
+239;Tashkent International;TAS;Uzbekistan
+240;Santiago;SCL;Chile
+241;Florence;FLR;Italy
+242;Volgograd;VOG;Russian Federation
+243;Orenburg;REN;Russian Federation
+244;Lisbon;LIS;Portugal
+245;Kuala Lumpur;KUL;Malaysia
+246;Tianjin;TSN;China
+247;Nha Trang;CXR;Vietnam
+248;Yinchuan;INC;China
+249;Muscat;MCT;Oman
+250;Dhaka;DAC;Bangladesh
+251;Cardiff;CWL;United Kingdom
+252;Rouen;URO;France
+253;Bristol;BRS;United Kingdom
+254;Stockholm;ARN;Sweden
+255;Khanty;HMA;Russian Federation
+256;Aalesund;AES;Norway
+257;Stavanger;SVG;Norway
+258;Manchester;MAN;United Kingdom
+259;Brindisi;BDS;Italy
+260;Dar Es Salaam;nia;Tanza
+261;London;LGW;United Kingdom
+262;Nuremberg;NUE;Germany
+263;Albany NY;ALB;United States of
+264;New York NY;EWR;United States of
+265;Philadelphia PA;PHL;United States of
+266;Gran Canaria;LPA;Spain and Canary
+267;Tenerife;TFN;Spain and Canary
+268;Scranton/Wilkes;AVP;United States of
+269;Fuerteventura;FUE;Spain and Canary
+270;Arkhangelsk;ARH;Russian Federation
+271;Kupang;KOE;Indonesia
+272;Palembang;PLM;Indonesia
+273;Yogyakarta;JOG;Indonesia
+274;Makassar;UPG;Indonesia
+275;Gorontalo;GTO;Indonesia
+276;Athens;ATH;Greece
+277;Aalborg;AAL;Denmark
+278;Hyderabad;HYD;India
+279;Thiruvananthapuram;TRV;India
+280;Abha;AHB;Saudi Arabia
+281;Aktobe;AKX;Kazakhstan
+282;Palermo;PMO;Italy
+283;Palma De Mallorca;PMI;Spain and
+284;Buenos Aires;EZE;Argentina
+285;Trelew;REL;Argentina
+286;Neuquen;NQN;Argentina
+287;Buenos Aires;AEP;Argentina
+288;Ushuaia;USH;Argentina
+289;El Calafate;FTE;Argentina
+290;Surgut;SGC;Russian Federation
+291;Ufa;UFA;Russian Federation
+292;Dallas TX;DFW;United States of
+293;Norfolk VA;ORF;United States of
+294;Toronto;YYZ;Canada
+295;Vancouver;YVR;Canada
+296;Columbus OH;CMH;United States of
+297;Honolulu HI;HNL;United States of
+298;Odesa;ODS;Ukraine
+299;Krasnoyarsk;KJA;Russian Federation
+300;Rizhao;RIZ;China
+301;Hiroshima;HIJ;Japan
+302;Glasgow;GLA;United Kingdom
+303;Las Vegas NV;LAS;United States of
+304;Tel Aviv;TLV;Israel
+305;Winnipeg;YWG;Canada
+306;Dublin;DUB;Ireland
+307;Yiwu;YIW;China
+308;Osaka;KIX;Japan
+309;Aktau;SCO;Kazakhstan
+310;Ningbo;NGB;China
+311;Nanning;NNG;China
+312;Guiyang;KWE;China
+313;Syracuse NY;SYR;United States of
+314;Grand Rapids MI;GRR;United States of
+315;Austin TX;AUS;United States of
+316;New Orleans LA;MSY;United States of
+317;Billings MT;BIL;United States of
+318;Orlando FL;MCO;United States of
+319;Columbia SC;CAE;United States of
+320;Reno NV;RNO;United States of
+321;Dazhou;DAX;China
+322;Noumea;NOU;New Caledonia
+323;Tallinn;TLL;Estonia
+324;Denpasar;DPS;Indonesia
+325;Adelaide;ADL;Australia
+326;Perth;PER;Australia
+327;Tambolaka;TMC;Indonesia
+328;Huntsville AI;HSV;United States of
+329;Panama City FL;ECP;United States of
+330;Melbourne FL;MLB;United States of
+331;Gulfport/Biloxi MS;GPT;United States
+332;Chiang Mai;CNX;Thailand
+333;Barnaul;BAX;Russian Federation
+334;Nanchang;KHN;China
+335;Yantai;YNT;China
+336;Yanji;YNJ;China
+337;Charlotte NC;CLT;United States of
+338;Lexington KY;LEX;United States of
+339;Rafha;RAH;Saudi Arabia
+340;Yancheng;YNZ;China
+341;Ordos;DSN;China
+342;Trieste;TRS;Italy
+343;Changde;CGD;China
+344;Oran;ORN;Algeria
+345;Chelyabinsk;CEK;Russian Federation
+346;Tehran;IKA;Iran
+347;South Bend IN;SBN;United States of
+348;Helena MT;HLN;United States of
+349;Santa Ana CA;SNA;United States of
+350;Nantong;NTG;China
+351;Handan;HDG;China
+352;Manila;MNL;Philippines
+353;Pau;PUF;France
+354;Montreal;YUL;Canada
+355;Caen;CFR;France
+356;San Antonio TX;SAT;United States of
+357;Louisville KY;SDF;United States of
+358;Zagreb;ZAG;Croatia
+359;San Diego CA;SAN;United States of
+360;Qionghai Hainan;BAR;China
+361;Phnom Penh;PNH;Cambodia
+362;Peoria IL;PIA;United States of America
+363;Little Rock AR;LIT;United States of
+364;Buon Ma Thuot;BMV;Vietnam
+365;Xining;XNN;China
+366;Pekanbaru;PKU;Indonesia
+367;Vienna;VIE;Austria
+368;Perm;PEE;Russian Federation
+369;Larnaca;LCA;Cyprus
+370;Hurghada;HRG;Egypt
+371;Karlovy Vary;KLV;Czech Republic
+372;Korla;KRL;China
+373;Islamabad;ISB;Pakistan
+374;Luxembourg;LUX;Luxembourg
+375;Asturias;OVD;Spain and Canary Islands
+376;Saransk;SKX;Russian Federation
+377;Lijiang;LJG;China
+378;Lhasa/Lasa;LXA;China
+379;Jinan;TNA;China
+380;Portland ME;PWM;United States of
+381;Fort Myers FL;RSW;United States of
+382;Duesseldorf;DUS;Germany
+383;Nashville TN;BNA;United States of
+384;Praya;LOP;Indonesia
+385;Kyzylorda;KZO;Kazakhstan
+386;Baku;GYD;Azerbaijan
+387;Baltimore MD;BWI;United States of
+388;Washington;IAD;United States of
+389;Denver CO;DEN;United States of
+390;Conakry;CKY;Guinea
+391;Brussels;ZYR;Belgium
+392;Kaliningrad;KGD;Russian Federation
+393;Bloomington;BMI;United States of
+394;Caracas;CCS;Venezuela
+395;Burlington VT;BTV;United States of
+396;Dakar;DSS;Senegal
+397;Antwerp;ZWE;Belgium
+398;Simferopol;SIP;Ukraine
+399;Fargo ND;FAR;United States of
+400;Savannah GA;SAV;United States of
+401;Wausau WI;CWA;United States of
+402;Melilla;MLN;Spain and Canary Islands
+403;Malta;MLA;Malta
+404;Marrakech;RAK;Morocco
+405;Havana;HAV;Cuba
+406;Novyj Urengoj;NUX;Russian Federation
+407;Monterrey;MTY;Mexico
+408;Ciudad Juarez;CJS;Mexico
+409;Antalya;AYT;Turkey
+410;Tijuana;TIJ;Mexico
+411;Can Tho;VCA;Vietnam
+412;Phu Quoc Island;PQC;Vietnam
+413;Merauke;MKQ;Indonesia
+414;Jayapura;DJJ;Indonesia
+415;Bisha;BHH;Saudi Arabia
+416;Sapporo;CTS;Japan
+417;Niigata;KIJ;Japan
+418;San Jose CA;SJC;United States of
+419;Kaohsiung;KHH;Taiwan
+420;Belgorod;EGO;Russian Federation
+421;Amman;AMM;Jordan
+422;Jinzhou;JNZ;China
+423;Hefei;HFE;China
+424;Chongqing;CKG;China
+425;Goteborg;GOT;Sweden
+426;Lanzarote;ACE;Spain and Canary
+427;Syktyvkar;SCW;Russian Federation
+428;Richmond VA;RIC;United States of
+429;Cagliari;CAG;Italy
+430;Reggio Di Calabria;REG;Italy
+431;Appleton WI;ATW;United States of
+432;Memphis TN;MEM;United States of
+433;Des Moines IA;DSM;United States of
+434;Baghdad;BGW;Iraq
+435;Surakarta (Solo);SOC;Indonesia
+436;Medan;KNO;Indonesia
+437;Banda Aceh;BTJ;Indonesia
+438;Jazan;GIZ;Saudi Arabia
+439;Tengchong;TCZ;China
+440;Khartoum;KRT;Sudan
+441;Hamburg;HAM;Germany
+442;San Francisco CA;SFO;United States
+443;Chicago IL;MDW;United States of
+444;Gainesville FL;GNV;United States of
+445;Cleveland OH;CLE;United States of
+446;Belfast;BHD;United Kingdom
+447;Hailar;HLD;China
+448;Houston TX;HOU;United States of
+449;Montego Bay;MBJ;Jamaica
+450;Pasco WA;PSC;United States of
+451;Crestview FL;VPS;United States of
+452;Moline IL;MLI;United States of
+453;Wadi Al Dawaser;WAE;Saudi Arabia
+454;Lahore;LHE;Pakistan
+455;Basrah;BSR;Iraq
+456;Tabuk;TUU;Saudi Arabia
+457;Brisbane;BNE;Australia
+458;Auckland;AKL;New Zealand
+459;Debre Tabor;DTB;Ethiopia
+460;Constantine;CZL;Algeria
+461;Al Najaf;NJF;Iraq
+462;Kalamazoo/Battle Creek MI;AZO;United
+463;Novokuznetsk;NOZ;Russian Federation
+464;Alexandria;HBE;Egypt
+465;Jouf;AJF;Saudi Arabia
+466;Moscow;DME;Russian Federation
+467;Con Dao Island;VCS;Vietnam
+468;Gassim;ELQ;Saudi Arabia
+469;Ahmedabad;AMD;India
+470;Kagoshima;KOJ;Japan
+471;Tbilisi;TBS;Georgia
+472;Changzhou;CZX;China
+473;Palu;PLW;Indonesia
+474;Traverse City MI;TVC;United States of
+475;Indianapolis IN;IND;United States of
+476;Zurich;ZRH;Switzerland
+477;Billund;BLL;Denmark
+478;Baoshan;BSD;China
+479;Komsomolsk;KXK;Russian Federation
+480;Oslo;OSL;Norway
+481;Shymkent;CIT;Kazakhstan
+482;Rio De Janeiro;GIG;Brazil
+483;Recife;REC;Brazil
+484;Fortaleza;FOR;Brazil
+485;Southampton;SOU;United Kingdom
+486;Chambery;CMF;France
+487;Exeter;EXT;United Kingdom
+488;Kostanay;KSN;Kazakhstan
+489;Qianjiang;JIQ;China
+490;Da Lat;DLI;Vietnam
+491;Vientiane;VTE;Lao People's
+492;Algiers;ALG;Algeria
+493;Townsville;TSV;Australia
+494;Ankara;ESB;Turkey
+495;Xiangyang;XFN;China
+496;Mudanjiang;MDG;China
+497;Yulin;UYN;China
+498;Bari;BRI;Italy
+499;Wuhai;WUA;China
+500;Fukuoka;FUK;Japan
+501;Osaka;ITM;Japan
+502;Salekhard;SLY;Russian Federation
+503;Bristol/Johnson/Kingsport TN;TRI;
+504;Charleston SC;CHS;United States of
+505;Cordoba;COR;Argentina
+506;Mendoza;MDZ;Argentina
+507;Guam;GUM;Guam
+508;Pisa;PSA;Italy
+509;Balikpapan;BPN;Indonesia
+510;Poitiers;PIS;France
+511;Tanjung Redeb;BEJ;Indonesia
+512;Taipei;TSA;Taiwan
+513;Qinhuangdao;BPE;China
+514;Komatsu;KMQ;Japan
+515;Zhanjiang;ZHA;China
+516;Nampula;APL;Mozambique
+517;Kisumu;KIS;Kenya
+518;Santiago De Compostela;SCQ;Spain
+519;Montevideo;MVD;Uruguay
+520;San Juan;UAQ;Argentina
+521;Hannover;HAJ;Germany
+522;Yushu;YUS;China
+523;Saint Louis MO;STL;United States of
+524;Samarkand International;SKD;
+525;Linyi;LYI;China
+526;Kashi;KHG;China
+527;Panama City;PTY;Panama
+528;Calvi;CLY;France
+529;Kiev;KBP;Ukraine
+530;Humberside;HUY;United Kingdom
+531;Cairns;CNS;Australia
+532;Boise ID;BOI;United States of America
+533;Abidjan;ABJ;Cote d'Ivoire
+534;Kuwait;KWI;Kuwait
+535;Culiacan;CUL;Mexico
+536;San Salvador;SAL;El Salvador
+537;Genoa;GOA;Italy
+538;Los Mochis;LMM;Mexico
+539;Padang;PDG;Indonesia
+540;Batam;BTH;Indonesia
+541;Sarasota/Bradenton FL;SRQ;United
+542;Asheville/Hendersonv. NC;AVL;United
+543;Charlottesville VA;CHO;United States of
+544;Akron/Canton OH;CAK;United States of
+545;Albuquerque NM;ABQ;United States of
+546;Bergen;BGO;Norway
+547;Norwich;NWI;United Kingdom
+548;Xichang;XIC;China
+549;Xigaze/Rikaze;RKZ;China
+550;Greensboro/High Point NC;GSO;United
+551;Mobile AI;MOB;United States of
+552;Dallas TX;DAL;United States of
+553;Greenville/Spartanburg SC;GSP;United
+554;Tulsa OK;TUL;United States of
+555;Dali;DLU;China
+556;Porto;OPO;Portugal
+557;Okinawa;OKA;Japan
+558;Cebu;CEB;Philippines
+559;Vaxjo;VXO;Sweden
+560;Aspen CO;ASE;United States of
+561;Sao Paulo;GRU;Brazil
+562;Allentown PA;ABE;United States of
+563;Tucuman;TUC;Argentina
+564;Saginaw/Midland/Bay C. MI;MBS;
+565;Torreon;TRC;Mexico
+566;Enshi;ENH;China
+567;Newcastle;NCL;United Kingdom
+568;Windhoek;WDH;Namibia
+569;Eldoret;EDL;Kenya
+570;Djibouti;JIB;Djibouti
+571;Durham;MME;United Kingdom
+572;Bremen;BRE;Germany
+573;Astana;TSE;Kazakhstan
+574;Flint MI;FNT;United States of America
+575;Bismarck ND;BIS;United States of
+576;Pocatello ID;PIH;United States of
+577;Tallahassee FL;TLH;United States of
+578;Qui Nhon;UIH;Vietnam
+579;Figari;FSC;France
+580;Ji An;JGS;China
+581;Castres;DCM;France
+582;Montpellier;MPL;France
+583;Entebbe;EBB;Uganda
+584;Santa Cruz De La Palma;SPC;Spain
+585;Hail;HAS;Saudi Arabia
+586;Lagos;LOS;Nigeria
+587;Bangor ME;BGR;United States of
+588;Clermont;CFE;France
+589;Cedar Rapids IA;CID;United States of
+590;Jackson MS;JAN;United States of
+591;Augusta GA;AGS;United States of
+592;Tuxtla Gutierrez;TGZ;Mexico
+593;Buffalo NY;BUF;United States of
+594;Bozeman MT;BZN;United States of
+595;Tapachula;TAP;Mexico
+596;San Luis Potosi;SLP;Mexico
+597;Limoges;LIG;France
+598;Rennes;RNS;France
+599;Douala;DLA;Cameroon
+600;Yichang;YIH;China
+601;Zaragoza;ZAZ;Spain and Canary
+602;Sevilla;SVQ;Spain and Canary Islands
+603;Shiyan;WDS;China
+604;Hotan;HTN;China
+605;Aomori;AOJ;Japan
+606;Pointe A Pitre;PTP;Guadeloupe
+607;Fort;FDF;Martinique
+608;San Juan;SJU;Puerto Rico
+609;Bridgetown;BGI;Barbados
+610;Cayenne;CAY;French Guiana
+611;Saint Barthelemy;SBH;Guadeloupe
+612;St Maarten;SXM;Sint Maarten
+613;Sioux Falls SD;FSD;United States of
+614;Lamezia Terme;SUF;Italy
+615;Brive;BVE;France
+616;Grand Forks ND;GFK;United States of
+617;London;LTN;United Kingdom
+618;Granada;GRX;Spain and Canary
+619;Manchester NH;MHT;United States of
+620;Westchester County NY;HPN;United
+621;Merida;MID;Mexico
+622;Aberdeen;ABZ;United Kingdom
+623;Qiqihar;NDG;China
+624;Bastia;BIA;France
+625;Jining;JNG;China
+626;Punta Cana;PUJ;Dominican Republic
+627;N'Djamena;NDJ;Chad
+628;Lome;LFW;Togo
+629;Luoyang;LYA;China
+630;Edmonton;YEG;Canada
+631;Oakland CA;OAK;United States of
+632;Great Falls MT;GTF;United States of
+633;Zhangye;YZY;China
+634;Jinghong;JHG;China
+635;San Pedro Sula;SAP;Honduras
+636;Long Beach CA;LGB;United States of
+637;Aksu;AKU;China
+638;Anshan;AOG;China
+639;Duluth MN;DLH;United States of
+640;Rochester NY;ROC;United States of
+641;Ambon;AMQ;Indonesia
+642;Suceava;SCV;Romania
+643;Huatugou;HTT;China
+644;Ulaanbaatar;ULN;Mongolia
+645;MYR;MYR;
+646;La Coruna;LCG;Spain and Canary
+647;Addis Ababa;ADD;Ethiopia
+648;Newport News/Williamsb VA;PHF;
+649;Lorient;LRT;France
+650;Yaounde;NSI;Cameroon
+651;Tenerife;TFS;Spain and Canary
+652;Qiemo;IQM;China
+653;Daytona Beach FL;DAB;United States
+654;Chifeng;CIF;China
+655;Lafayette LA;LFT;United States of
+656;Harrisburg PA;MDT;United States of
+657;Santo Domingo;SDQ;Dominican
+658;Nuevo Laredo;NLD;Mexico
+659;Kosice;KSC;Slovakia
+660;Zhoushan;HSN;China
+661;Weihai;WEH;China
+662;Lincang;LNJ;China
+663;Bandar Seri Begawan;BWN;Brunei
+664;Agen;AGF;France
+665;Perpignan;PGF;France
+666;Ostrava;OSR;Czech Republic
+667;Baotou;BAV;China
+668;Dawadmi;DWD;Saudi Arabia
+669;Zunyi;ZYI;China
+670;Split;SPU;Croatia
+671;Santa Cruz;VVI;Bolivia
+672;Florianopolis;FLN;Brazil
+673;Mar Del Plata;MDQ;Argentina
+674;Bahia Blanca;BHI;Argentina
+675;Rosario;ROS;Argentina
+676;Asuncion;ASU;Paraguay
+677;Manzanillo;ZLO;Mexico
+678;Kiev;IEV;Ukraine
+679;Mei Xian;MXZ;China
+680;Jiamusi;JMU;China
+681;Yichun;LDS;China
+682;Toyama;TOY;Japan
+683;Bengaluru;BLR;India
+684;Suzhou;SZV;China
+685;La Rochelle;LRH;France
+686;Mumbai;BOM;India
+687;Freetown;FNA;Sierra Leone
+688;Kinshasa;ngo;Co
+689;Ndola;NLA;Zambia
+690;Brazzaville;BZV;Congo
+691;Bandar Lampung;TKG;Indonesia
+692;Johannesburg;JNB;South Africa
+693;Lhok Seumawe;LSW;Indonesia
+694;Zhaotong;ZAT;China
+695;Dunhuang;DNH;China
+696;Tongxiang;TVX;China
+697;Chattanooga TN;CHA;United States of
+698;Jiaxing;JXS;China
+699;Santiago Del Estero;SDE;Argentina
+700;Fayetteville NC;FAY;United States of
+701;Libo;LLB;China
+702;Linfen;LFQ;China
+703;Haiphong;HPH;Vietnam
+704;Wellington;WLG;New Zealand
+705;Mackay;MKY;Australia
+706;Sorong;SOQ;Indonesia
+707;Manokwari;MKW;Indonesia
+708;Tembagapura/Timika;TIM;Indonesia
+709;Rapid City SD;RAP;United States of
+710;Butte MT;BTM;United States of
+711;St George UT;SGU;United States of
+712;Sibiu;SBZ;Romania
+713;Medford OR;MFR;United States of
+714;Ontario CA;ONT;United States of
+715;Libreville;LBV;Gabon
+716;Hailey/Sun Valley ID;SUN;United
+717;Brunswick GA;BQK;United States of
+718;Antananarivo;TNR;Madagascar
+719;Corning / Elmira NY;ELM;United States
+720;Moroni;HAH;Comoros
+721;Atyrau;GUW;Kazakhstan
+722;Guyuan;GYU;China
+723;Jiagedaqi;JGD;China
+724;Krakow;KRK;Poland
+725;Peshawar;PEW;Pakistan
+726;Erbil;EBL;Iraq
+727;Dresden;DRS;Germany
+728;Belize City;BZE;Belize
+729;Mombasa;MBA;Kenya
+730;Juba;JUB;South Sudan
+731;Bangui;BGF;Central African Republic
+732;Kunshan;KVN;China
+733;San Jose;SJO;Costa Rica
+734;Hue;HUI;Vietnam
+735;Yibin;YBP;China
+736;Alexandria LA;AEX;United States of
+737;Paramaribo;PBM;Suriname
+738;Reykjavik;KEF;Iceland
+739;Nanyang;NNY;China
+740;Songyuan;YSQ;China
+741;Thessaloniki;SKG;Greece
+742;Charleston WV;CRW;United States of
+743;Halifax;YHZ;Canada
+744;Linkoping;LPI;Sweden
+745;Shizuoka;FSZ;Japan
+746;Bishkek;FRU;Kyrgyzstan
+747;Mangshi;LUM;China
+748;Yongzhou;LLF;China
+749;Malabo;SSG;Equatorial Guinea
+750;Tarakan;TRK;Indonesia
+751;Luwuk;LUW;Indonesia
+752;Key West FL;EYW;United States of
+753;Yining;YIN;China
+754;Bengkulu;BKS;Indonesia
+755;Oradea;OMR;Romania
+756;Kigali;KGL;Rwanda
+757;Bujumbura;BJM;Burundi
+758;Maumere;MOF;Indonesia
+759;Bacau;BCM;Romania
+760;Puerto Vallarta;PVR;Mexico
+761;Tahiti;PPT;French Polynesia
+762;Lima;LIM;Peru
+763;Williston ND;ISN;United States of
+764;Rabat;RBA;Morocco
+765;Kalispell MT;FCA;United States of
+766;Mauritius;MRU;Mauritius
+767;Bratislava;BTS;Slovakia
+768;Karaganda;KGF;Kazakhstan
+769;Aruba;AUA;Aruba
+770;Nadi;NAN;Fiji
+771;Wanzhou;WXN;China
+772;Abuja;ABV;Nigeria
+773;Redmond/Bend OR;RDM;United States
+774;Tivat;TIV;Montenegro
+775;Johor Bahru;JHB;Malaysia
+776;Santa Fe;SFN;Argentina
+777;San Carlos Bariloche;BRC;Argentina
+778;Comodoro Rivadavia;CRD;Argentina
+779;Salta;SLA;Argentina
+780;Luanda;LAD;Angola
+781;Satu Mare;SUJ;Romania
+782;Ouagadougou;OUA;Burkina Faso
+783;New York NY;SWF;United States of
+784;Vigo;VGO;Spain and Canary Islands
+785;Chennai;MAA;India
+786;Nyingchi/Linzhi;LZY;China
+787;Xinzhou;WUT;China
+788;Burbank CA;BUR;United States of
+789;Khujhand;LBD;Tajikistan
+790;London;SEN;United Kingdom
+791;Guayaquil;GYE;Ecuador
+792;Salvador;SSA;Brazil
+793;Ljubljana;LJU;Slovenia
+794;Lewiston ID;LWS;United States of
+795;Takamatsu;TAK;Japan
+796;Saipan;SPN;Northern Mariana Islands
+797;Missoula MT;MSO;United States of
+798;Campeche;CPE;Mexico
+799;Saskatoon;YXE;Canada
+800;Dzaoudzi;DZA;Mayotte
+801;Pemba;POL;Mozambique
+802;Iguazu;IGR;Argentina
+803;Eugene OR;EUG;United States of
+804;Xuzhou;XUZ;China
+805;Hengyang;HNY;China
+806;Istanbul;SAW;Turkey
+807;Milan;BGY;Italy
+808;Toulon/Hyeres;TLN;France
+809;Fuyun;FYN;China
+810;Villahermosa;VSA;Mexico
+811;Veracruz;VER;Mexico
+812;Sibolga;FLZ;Indonesia
+813;Tongren;TEN;China
+814;Zhenjiang;ZUJ;China
+815;Daqing;DQA;China
+816;Hartford CT;BDL;United States of
+817;New Bern NC;EWN;United States of
+818;Multan;MUX;Pakistan
+819;Huai An;HIA;China
+820;Kingston;KIN;Jamaica
+821;Nabire;NBX;Indonesia
+822;Biak;BIK;Indonesia
+823;Punta Del Este;PDP;Uruguay
+824;Resistencia;RES;Argentina
+825;Turpan;TLQ;China
+826;Rach Gia;VKG;Vietnam
+827;Mahe Island;SEZ;Seychelles
+828;Mandalay;MDL;Myanmar
+829;Ganzhou;KOW;China
+830;Beihai;BHY;China
+831;Ottawa;YOW;Canada
+832;Qaisumah;AQI;Saudi Arabia
+833;Taif;TIF;Saudi Arabia
+834;Gdansk;GDN;Poland
+835;Yan'An;ENY;China
+836;Trondheim;TRD;Norway
+837;Anchorage AK;ANC;United States of
+838;Nay Pyi Taw;NYT;Myanmar
+839;Krabi;KBV;Thailand
+840;Taizhou;HYN;China
+841;Valdosta GA;VLD;United States of
+842;Oslo;TRF;Norway
+843;Luliang;LLV;China
+844;Porto Seguro;BPS;Brazil
+845;Viedma;VDM;Argentina
+846;Erie PA;ERI;United States of America
+847;Heihe;HEK;China
+848;Ibiza;IBZ;Spain and Canary Islands
+849;Mexicali;MXL;Mexico
+850;La Paz;LAP;Mexico
+851;Karachi;KHI;Pakistan
+852;Regina;YQR;Canada
+853;Rochester MN;RST;United States of
+854;El Paso TX;ELP;United States of
+855;Aberdeen SD;ABR;United States of
+856;Sendai;SDJ;Japan
+857;Arar;RAE;Saudi Arabia
+858;Queretaro;QRO;Mexico
+859;Jackson WY;JAC;United States of
+860;Thanh Hoa;THD;Vietnam
+861;Wichita KS;ICT;United States of
+862;Monroe LA;MLU;United States of
+863;Dothan AI;DHN;United States of
+864;Canberra;CBR;Australia
+865;Yangzhou;YTY;China
+866;Vinh City;VII;Vietnam
+867;Delingha;HXD;China
+868;Luang Prabang;LPQ;Lao People's
+869;Lucknow;LKO;India
+870;Dong Hoi;VDH;Vietnam
+871;Baubau;BUW;Indonesia
+872;Kendari;KDI;Indonesia
+873;Palangkaraya;PKY;Indonesia
+874;Lansing MI;LAN;United States of
+875;Santander;SDR;Spain and Canary
+876;Osh;OSS;Kyrgyzstan
+877;Fairbanks AK;FAI;United States of
+878;Karamay;KRY;China
+879;Mianyang;MIG;China
+880;Mohe;OHE;China
+881;Dayton OH;DAY;United States of
+882;Port;PAP;Haiti
+883;Kita Kyushu;KKJ;Japan
+884;Langkawi;LGK;Malaysia
+885;Sharurah;SHW;Saudi Arabia
+886;Acapulco;ACA;Mexico
+887;Taichung;RMQ;Taiwan
+888;Tuy Hoa;TBB;Vietnam
+889;Menorca;MAH;Spain and Canary Islands
+890;Hermosillo;HMO;Mexico
+891;Ottawa;XDS;Canada
+892;Pescara;PSR;Italy
+893;Banyuwangi;BWX;Indonesia
+894;Wroclaw;WRO;Poland
+895;Bergerac;EGC;France
+896;Manado;MDC;Indonesia
+897;Port Harcourt;PHC;Nigeria
+898;Kochi;COK;India
+899;Accra;ACC;Ghana
+900;Monrovia;ROB;Liberia
+901;Turaif;TUI;Saudi Arabia
+902;Kona HI;KOA;United States of America
+903;Pointe;PNR;Congo
+904;Wuyishan;WUS;China
+905;Columbus GA;CSG;United States of
+906;Cotonou;COO;Benin
+907;Al Baha;ABT;Saudi Arabia
+908;San Rafael;AFA;Argentina
+909;Parana;PRA;Argentina
+910;Kalibo;KLO;Philippines
+911;Al Ula;ULH;Saudi Arabia
+912;Trapani;TPS;Italy
+913;Inverness;INV;United Kingdom
+914;Ternate;TTE;Indonesia
+915;Pontianak;PNK;Indonesia
+916;Kahului HI;OGG;United States of
+917;Baishan;NBS;China
+918;Puebla;PBC;Mexico
+919;Mazatlan;MZT;Mexico
+920;Tonghua;TNH;China
+921;Victoria;YYJ;Canada
+922;Tucson AZ;TUS;United States of
+923;Niamey;NIM;Niger
+924;Springfield MO;SGF;United States of
+925;Lusaka;LUN;Zambia
+926;Prince George;YXS;Canada
+927;Koror;ROR;Palau
+928;Altay;AAT;China
+929;Luzon Island;CRK;Philippines
+930;Sukhothai;THS;Thailand
+931;Kashi;QSZ;China
+932;Saint Pierre De La Reunion;ZSE;
+933;Aurillac;AUR;France
+934;Penang;PEN;Malaysia
+935;Miyazaki;KMI;Japan
+936;Reynosa;REX;Mexico
+937;Shijiazhuang;SJW;China
+938;Marquette MI;MQT;United States of
+939;Minot ND;MOT;United States of
+940;Jambi;DJB;Indonesia
+941;Escanaba MI;ESC;United States of
+942;Leon/Guanajuato;BJX;Mexico
+943;Kelowna;YLW;Canada
+944;Simao;SYM;China
+945;Tampico;TAM;Mexico
+946;Gold Coast;OOL;Australia
+947;Liupanshui;LPF;China
+948;Tamky;VCL;Vietnam
+949;Lilongwe;LLW;Malawi
+950;State College PA;SCE;United States of
+951;Zunyi;WMT;China
+952;Saint Martin;SFG;Guadeloupe
+953;Matsuyama;MYJ;Japan
+954;Santiago;STI;Dominican Republic
+955;Minatitlan;MTT;Mexico
+956;Guatemala City;GUA;Guatemala
+957;Huangshan;TXN;China
+958;Christchurch;CHC;New Zealand
+959;Jixi;JXA;China
+960;Oita;OIT;Japan
+961;Banjarmasin;BDJ;Indonesia
+962;Labuan Bajo;LBJ;Indonesia
+963;Kathmandu;KTM;Nepal
+964;Kristiansand;KRS;Norway
+965;Pangkalpinang;PGK;Indonesia
+966;Saint Denis De La Reunion;RUN;
+967;Fort Smith AR;FSM;United States of
+968;Elko NV;EKO;United States of America
+969;Bima;BMU;Indonesia
+970;Wenshan;WNH;China
+971;Golog;GMQ;China
+972;Bamako;BKO;Mali
+973;Gurayat;URY;Saudi Arabia
+974;Graz;GRZ;Austria
+975;Malang;MLG;Indonesia
+976;Oaxaca;OAX;Mexico
+977;Curacao;CUR;Curacao
+978;Palm Springs CA;PSP;United States of
+979;Panzhihua;PZI;China
+980;Bahrain;BAH;Bahrain
+981;Leeds/Bradford;LBA;United Kingdom
+982;Zhenjiang;DYN;China
+983;Aguascalientes;AGU;Mexico
+984;Changzhi;CIH;China
+985;Catamarca;CTC;Argentina
+986;Curitiba;CWB;Brazil
+987;Nouakchott;NKC;Mauritania
+988;Jinchang;JIC;China
+989;Livingstone;LVI;Zambia
+990;Shiquanhe;NGQ;China
+991;International Falls MN;INL;United
+992;Xingyi;ACX;China
+993;Putussibau;PSU;Indonesia
+994;Saltillo;SLW;Mexico
+995;Okayama;OKJ;Japan
+996;Langgur;LUV;Indonesia
+997;Langcang;JMJ;China
+998;Sharm El;SSH;Egypt
+999;Nassau;NAS;Bahamas
+1000;Chiang Rai;CEI;Thailand
+1001;Cork;ORK;Ireland
+1002;Albany GA;ABY;United States of
+1003;Tanjung Pandan;TJQ;Indonesia
+1004;Dien Bien Phu;DIN;Vietnam
+1005;Huizhou;HUZ;China
+1006;Grand Junction CO;GJT;United States
+1007;Fresno CA;FAT;United States of
+1008;Ende;ENE;Indonesia
+1009;Ukunda;UKA;Kenya
+1010;Pensacola FL;PNS;United States of
+1011;Saumlaki;SXK;Indonesia
+1012;Kano;KAN;Nigeria
+1013;Esquel;EQS;Argentina
+1014;Idaho Falls ID;IDA;United States of
+1015;Huatulco;HUX;Mexico
+1016;Tanjung Pinang;TNJ;Indonesia
+1017;Posadas;PSS;Argentina
+1018;Kuqa;KCA;China
+1019;Ixtapa/Zihuatanejo;ZIH;Mexico
+1020;Maputo;MPM;Mozambique
+1021;Victoria Falls;VFA;Zimbabwe
+1022;Almeria;LEI;Spain and Canary Islands
+1023;Sumbawa Besar;SWQ;Indonesia
+1024;Saint Thomas;nds;Virgin Isla
+1025;Twin Falls ID;TWF;United States of
+1026;Liberia;LIR;Costa Rica
+1027;Morelia;MLM;Mexico
+1028;Jingzhou;SHS;China
+1029;Darwin;DRW;Australia
+1030;Pleiku;PXU;Vietnam
+1031;Bandung;BDO;Indonesia
+1032;Guangyuan;GYS;China
+1033;Shangrao;SQD;China
+1034;Bonaire;BON;Bonaire
+1035;Ulanhot;HLH;China
+1036;Sintang;SQG;Indonesia
+1037;Ketapang;KTG;Indonesia
+1038;Termas De Rio Hondo;RHD;Argentina
+1039;Hongping;HPG;China
+1040;Fuyang;FUG;China
+1041;Daocheng;DCY;China
+1042;Bijie;BFJ;China
+1043;Dongying;DOY;China
+1044;Wenling;WLI;China
+1045;Durango;DGO;Mexico
+1046;Yingkou;YKH;China
+1047;Lourdes;LDE;France
+1048;Bole;BPL;China
+1049;Matamoros;MAM;Mexico
+1050;Liverpool;LPL;United Kingdom
+1051;Harare;HRE;Zimbabwe
+1052;Porto Alegre;POA;Brazil
+1053;Wedjh;EJH;Saudi Arabia
+1054;Tangshan;TVS;China
+1055;Hobart;HBA;Australia
+1056;Newcastle;NTL;Australia
+1057;Ithaca NY;ITH;United States of
+1058;Jujuy;JUJ;Argentina
+1059;Iron Mountain/Kingsfd. MI;IMT;United
+1060;Dushanbe;DYU;Tajikistan
+1061;Golmud;GOQ;China
+1062;Muna;RAQ;Indonesia
+1063;Mamuju;MJU;Indonesia
+1064;Marsh Harbour;MHH;Bahamas
+1065;Alghero;AHO;Italy
+1066;Ciudad Del Carmen;CME;Mexico
+1067;Pellston MI;PLN;United States of
+1068;Jember;JBB;Indonesia
+1069;Sault Sainte Marie MI;CIU;United
+1070;Casper WY;CPR;United States of
+1071;Dominica;DOM;Dominica
+1072;Rhinelander WI;RHI;United States of
+1073;Rio Cuarto;RCU;Argentina
+1074;Tegucigalpa;TGU;Honduras
+1075;San Luis;LUQ;Argentina
+1076;Corrientes;CNQ;Argentina
+1077;Colorado Springs CO;COS;United
+1078;Quebec;YQB;Canada
+1079;Kumamoto;KMJ;Japan
+1080;Cangyuan;CWJ;China
+1081;Grand Cayman;GCM;Cayman Islands
+1082;Ashgabat;ASB;Turkmenistan
+1083;La Rioja;IRJ;Argentina
+1084;Hofuf;HOF;Saudi Arabia
+1085;Port Sudan;PZU;Sudan
+1086;Managua;MGA;Nicaragua
+1087;Malindi;MYD;Kenya
+1088;Gunung Sitoli;GNS;Indonesia
+1089;Blantyre;BLZ;Malawi
+1090;Ciudad Obregon;CEN;Mexico
+1091;George Town;GGT;Bahamas
+1092;Tacheng;TCG;China
+1093;Terrace;YXT;Canada
+1094;Cedar City UT;CDC;United States of
+1095;Bermuda;BDA;Bermuda
+1096;Kolkata;CCU;India
+1097;Palopo;LLO;Indonesia
+1098;Shihezi;SHF;China
+1099;Bemidji MN;BJI;United States of
+1100;Lihue HI;LIH;United States of America
+1101;Tainan;TNN;Taiwan
+1102;Formosa;FMA;Argentina
+1103;Rio Grande;RGA;Argentina
+1104;Jiansanjiang;JSJ;China
+1105;Baise;AEB;China
+1106;Hanzhong;HZG;China
+1107;Cartagena;CTG;Colombia
+1108;La Crosse WI;LSE;United States of
+1109;Sihanoukville;KOS;Cambodia
+1110;Ninglang;NLH;China
+1111;Zacatecas;ZCL;Mexico
+1112;Natal;NAT;Brazil
+1113;Binghamton NY;BGM;United States of
+1114;Alpena MI;APN;United States of
+1115;Pangkalanbuun;PKN;Indonesia
+1116;Ca Mau;CAH;Vietnam
+1117;Chizhou;JUH;China
+1118;Hibbing/Chisholm MN;HIB;United
+1119;Providenciales;PLS;Turks and Caicos
+1120;Brainerd MN;BRD;United States of
+1121;Santa Rosa;RSA;Argentina
+1122;Saint Lucia;SLU;Saint Lucia
+1123;Medellin;MDE;Colombia
+1124;Saint Lucia;UVF;Saint Lucia
+1125;Rio Gallegos;RGL;Argentina
+1126;San Martin De Los Andes;CPC;
+1127;St Johns;YYT;Canada
+1128;Cozumel;CZM;Mexico
+1129;Roatan;RTB;Honduras

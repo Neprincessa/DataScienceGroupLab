@@ -1,9 +1,11 @@
 import json
 import csv
+from itertools import chain
+import pickle
 
 #handle = open("../../Airlines/FrequentFlyerForum-Profiles.json")
 
-with open("..\..\..\Airlines\FrequentFlyerForum-Profiles.json") as json_file:
+with open("..\..\Airlines\FrequentFlyerForum-Profiles.json") as json_file:
     data = json.load(json_file)
 
 Registered_Flights = []
@@ -112,6 +114,21 @@ for i in Loyality_Programm:
         PersonalIdLoyalty.append(PersonalIdLoyaltyInfo)
         
 
+a_file = open("data.pkl", "wb")
+pickle.dump(airpots, a_file)
+a_file.close()
+
+headerairports = ['AirportID', 'Name', 'Abbr', 'Country']
+
+with open('airports.csv', mode='w', newline='') as airports_file:
+    airports_writer = csv.writer(airports_file, delimiter=';')
+
+    airports_writer.writerow(headerairports)
+    for k in airpots:
+        list1 = [k]
+        list2 = airpots[k]
+        list_c = list(chain(list1, list2))
+        airports_writer.writerow(list_c)
 
 
 headerPersonalIdLoyalty = ['PersonId', 'Type', 'Abbr', 'LoyaltyId']
