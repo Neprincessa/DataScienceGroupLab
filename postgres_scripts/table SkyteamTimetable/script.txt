@@ -1,0 +1,27 @@
+CREATE TABLE public."SkyteamTimetable"
+(
+    dep_city VARCHAR(30) NULL,
+    dep_country VARCHAR(30) NULL,
+    dep_aeroport VARCHAR(30) NULL,
+    dest_city VARCHAR(30) NULL,
+    dest_country VARCHAR(30) NULL,
+    dest_aeroport VARCHAR(30) NULL,
+    dep_date DATE NULL,
+    dest_date DATE NULL,
+    days VARCHAR(30) NULL,
+    dep_time TIME NULL,
+    dest_time TIME NULL,
+    flight VARCHAR(30) NULL,
+    aircraft VARCHAR(30) NULL,
+    traveltime VARCHAR(30) NULL
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."SkyteamTimetable"
+    OWNER to postgres;
+
+
+
