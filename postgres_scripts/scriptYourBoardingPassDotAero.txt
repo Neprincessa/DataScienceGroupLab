@@ -1,0 +1,32 @@
+CREATE TABLE public."YourBoardingPassDotAero" (
+	uid NUMBER(38) NOT NULL,
+	sequence NUMBER(38) NULL,
+	sex VARCHAR(30) NULL,
+	first_name VARCHAR(30) NULL,
+	last_name VARCHAR(30) NULL,
+	Y_info VARCHAR(30) NULL,
+	flight_number VARCHAR(30) NULL,
+	dep_city VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	gate VARCHAR(30) NULL,
+	dest_code VARCHAR(30) NULL,
+        dep_code VARCHAR(30) NULL,
+        dep_date DATE NULL,
+	dep_time TIME NULL,
+	operator_info VARCHAR(30) NULL,
+	info VARCHAR(100) NULL,
+	seat VARCHAR(30) NULL,
+	PNR VARCHAR(30) NULL,
+	ticket_number VARCHAR(30) NULL
+)
+
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."YourBoardingPassDotAero"
+    OWNER to postgres;
+
+
+
