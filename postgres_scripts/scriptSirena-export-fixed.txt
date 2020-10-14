@@ -1,0 +1,25 @@
+CREATE TABLE "Sirena-export-fixed"(
+	PaxName varchar(60) not null,
+	PaxBirthDate varchar(10),
+	DepartDate date not null,
+	DepartTime time not null,
+	ArrivalDate date not null,
+	ArrivalTime time not null,
+	FlightCodeSh varchar(10) not null,
+	From_ varchar(3) not null,
+	Dest varchar(3) not null,
+	Code_e-Ticket varchar(22) not null,
+	TravelDoc varchar(11) not null,
+	Seat varchar(3),
+	Meal varchar(4),
+	TrvCls_Fare char not null,
+	Baggage varchar(20),
+	PaxAdditionalInfo varchar(20),
+	AdditionalInfo varchar(15),
+	AgentInfo varchar(50)
+);
+
+COPY "Sirena-export-fixed"("PaxName", "PaxBirthDate", "DepartDate", "DepartTime", "ArrivalDate", "ArrivalTime", "FlightCodeSh", "From_", "Dest", "Code_e-Ticket", "TravelDoc", "Seat", "Meal", "TrvCls_Fare", "Baggage", "PaxAdditionalInfo", "AdditionalInfo", "AgentInfo")
+FROM '/Users/elizabethnikolaeva/Sirena-export-fixed.csv'
+DELIMITER ';'
+CSV HEADER;

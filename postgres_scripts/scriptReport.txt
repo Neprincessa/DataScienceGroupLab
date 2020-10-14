@@ -1,0 +1,25 @@
+create table "Report"
+(
+	from_city varchar(25) not null,
+	from_country varchar(25) not null,
+	from_airport varchar(3) not null,
+	to_city varchar(25) not null,
+	to_country varchar(25) not null,
+	to_airport varchar(3) not null,
+	days date not null,
+	"depTime" date not null,
+	"arrTime" varchar(10) not null,
+	flight varchar(10) not null,
+	aircraft time not null,
+	"travelTime" time not null,
+	"addTime" time not null,
+	"someData" varchar(6) not null,
+	"someData2" varchar(3) not null,
+	"someData3" varchar(5) not null
+);
+
+COPY "Report"(from_city, from_country, from_airport, to_city, to_country, to_airport, days, "depTime", "arrTime", flight, aircraft, "travelTime", "addTime", "someData", "someData2", "someData3")
+FROM '/Users/elizabethnikolaeva/report.csv'
+DELIMITER ';'
+CSV HEADER;
+
