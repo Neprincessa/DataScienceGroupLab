@@ -1,0 +1,96 @@
+CREATE TABLE public."ForumPersonalInformation" (
+	person_id INTEGER NOT NULL,
+	nickname VARCHAR(30) NULL,
+	passenger_document VARCHAR(30) NULL,
+	sex VARCHAR(30) NULL,
+	first_name VARCHAR(30) NULL,
+	last_name VARCHAR(30) NULL,
+	PRIMARY KEY (person_id)
+
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."ForumPersonalInformation"
+    OWNER to postgres;
+
+
+
+
+CREATE TABLE public."ForumAirport" (
+	airport_id INTEGER NOT NULL,
+	name VARCHAR(30) NULL,
+	abbr VARCHAR(30) NULL,
+	country VARCHAR(30) NULL,
+	PRIMARY KEY (airport_id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."ForumAirport"
+    OWNER to postgres;
+
+
+
+CREATE TABLE public."ForumPersonalIdLoyalty" (
+	person_id INTEGER NOT NULL,
+	type VARCHAR(30) NULL,
+	abbr VARCHAR(30) NULL,
+	loyality_id INTEGER NULL,
+	CONSTRAINT fk_person_id
+	 FOREIGN KEY (person_id)
+	 REFERENCES public."ForumPersonalInformation"(person_id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."ForumPersonalIdLoyalty"
+    OWNER to postgres;
+
+
+CREATE TABLE public."ForumPersonIdInfoFlight" (
+	person_id INTEGER NOT NULL,
+	date DATE NULL,
+	codesh VARCHAR(30) NULL,
+	flight_number VARCHAR(30) NULL,
+	CONSTRAINT fk_person_id
+	 FOREIGN KEY (person_id)
+	 REFERENCES public."ForumPersonalInformation"(person_id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."ForumPersonIdInfoFlight"
+    OWNER to postgres;
+
+
+
+CREATE TABLE public."ForumPersonIdFlight" (
+	person_id INTEGER NOT NULL,
+	dep_airport_id INTEGER NOT NULL,
+	dest_airport_id INTEGER NOT NULL,
+	CONSTRAINT fk_person_id
+	 FOREIGN KEY (person_id)
+	 REFERENCES public."ForumPersonalInformation"(person_id),
+	CONSTRAINT fk_dep_airport_id
+	 FOREIGN KEY (dep_airport_id)
+	 REFERENCES public."ForumAirport"(airport_id),
+	CONSTRAINT fk_dest_airport_id
+	 FOREIGN KEY (dest_airport_id)
+	 REFERENCES public."ForumAirport"(airport_id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."ForumPersonIdFlight"
+    OWNER to postgres;
