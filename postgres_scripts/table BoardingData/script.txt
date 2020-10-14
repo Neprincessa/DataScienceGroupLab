@@ -6,14 +6,14 @@ CREATE TABLE public."BoardingData"
     sex VARCHAR(30) NULL,
     birth_date VARCHAR(30) NULL,
     passenger_document VARCHAR(30) NULL,
-    code VARCHAR(30) NULL,
+    booking_code VARCHAR(30) NULL,
     ticket_number VARCHAR(30) NULL,
     baggage VARCHAR(30) NULL,
     flight_date DATE NULL,
     flight_time TIME NULL,
     flight_number VARCHAR(30) NULL,
     codesh VARCHAR(30) NULL,
-    dest VARCHAR(30) NULL
+    dest_city VARCHAR(30) NULL
 )
 WITH (
     OIDS = FALSE
@@ -22,4 +22,3 @@ TABLESPACE pg_default;
 
 ALTER TABLE public."BoardingData"
     OWNER to postgres;
-	
