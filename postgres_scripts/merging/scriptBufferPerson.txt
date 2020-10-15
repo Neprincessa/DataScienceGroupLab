@@ -1,0 +1,67 @@
+create table public."BufferPerson"
+(
+	id SERIAL,
+	first_name varchar(25) not null,
+	last_name varchar(25) not null,
+	passenger_document VARCHAR(30) NULL
+);
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name, passenger_document)
+SELECT DISTINCT 
+ BD.first_name, 
+ BD.last_name,
+ BD.passenger_document
+FROM 
+ public."BoardingData" BD
+FULL OUTER JOIN
+(SELECT DISTINCT
+  paxname,
+  null,
+  traveldoc
+ FROM
+  public."Sirena") as S
+ON
+ BD.passenger_document = S.traveldoc;
+
+DELETE FROM public."BufferPerson" WHERE (first_name IS NULL AND last_name IS NULL);
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name)
+SELECT DISTINCT 
+ AD.first_name, 
+ AD.last_name
+FROM 
+ public."AirlinesData" AS AD
+WHERE
+ first_name != AD.first_name
+ AND last_name != AD.last_name
+ AND AD.first_name IS NOT NULL
+ AND AD.last_name IS NOT NULL;
+
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name)
+SELECT DISTINCT 
+ FPI.first_name, 
+ FPI.last_name
+FROM 
+ public."ForumPersonalInformation" AS FPI
+WHERE
+ first_name != FPI.first_name
+ AND last_name != FPI.last_name
+ AND FPI.first_name IS NOT NULL
+ AND FPI.last_name IS NOT NULL;
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name)
+SELECT DISTINCT 
+ YBPDA.first_name, 
+ YBPDA.last_name
+FROM 
+ public."YourBoardingPassDotAero" AS YBPDA
+WHERE
+ first_name != YBPDA.first_name
+ AND last_name != YBPDA.last_name
+ AND YBPDA.first_name IS NOT NULL
+ AND YBPDA.last_name IS NOT NULL;
