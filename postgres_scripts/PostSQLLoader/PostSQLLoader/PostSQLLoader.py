@@ -17,7 +17,7 @@ def create_tables_copy_data(db_in, path_in):
 	create table "AirlinesData"
 	(
 		uid varchar(9) not null,
-		fist_name varchar(25) not null,
+		first_name varchar(25) not null,
 		last_name varchar(25) not null,
 		cards_type varchar(8) not null,
 		card_number varchar(12),
@@ -31,7 +31,7 @@ def create_tables_copy_data(db_in, path_in):
 		fare varchar(6)
 	);
 	
-	COPY "AirlinesData"(uid, fist_name, last_name, cards_type, card_number, bonus_program, activities_type, activity_type, code, date, departure, arrival, fare)
+	COPY "AirlinesData"(uid, first_name, last_name, cards_type, card_number, bonus_program, activities_type, activity_type, code, date, departure, arrival, fare)
 	FROM '{}PointzAggregator-AirlinesData.csv'
 	DELIMITER ';'
 	CSV HEADER;
