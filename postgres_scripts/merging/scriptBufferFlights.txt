@@ -1,15 +1,27 @@
-create table public."TMPBufferFlights"
+create table public."BufferFlightsTMP1"
 (
 	id SERIAL,
 	ticket_number VARCHAR(30) NULL,
 	flight_number VARCHAR(30) NULL, 
 	dep_city VARCHAR(30) NULL,
-	dep_country VARCHAR(30) NULL,
 	dest_city VARCHAR(30) NULL,
-	dest_country VARCHAR(30) NULL,
 	dep_date DATE NULL,
-	travel_class VARCHAR(30) NULL	
+	travel_class VARCHAR(30) NULL,
+	baggage VARCHAR(30) NULL	
 );
+
+create table public."BufferFlightsTMP2"
+(
+	id SERIAL,
+	ticket_number VARCHAR(30) NULL,
+	flight_number VARCHAR(30) NULL, 
+	dep_city VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	dep_date DATE NULL,
+	travel_class VARCHAR(30) NULL,
+	baggage VARCHAR(30) NULL	
+);
+
 
 create table public."BufferFlights"
 (
@@ -17,27 +29,24 @@ create table public."BufferFlights"
 	ticket_number VARCHAR(30) NULL,
 	flight_number VARCHAR(30) NULL, 
 	dep_city VARCHAR(30) NULL,
-	dep_country VARCHAR(30) NULL,
 	dest_city VARCHAR(30) NULL,
-	dest_country VARCHAR(30) NULL,
 	dep_date DATE NULL,
 	travel_class VARCHAR(30) NULL,
 	baggage VARCHAR(30) NULL	
 );
 
-
-TRUNCATE public."TMPBufferFlights";
+TRUNCATE public."BufferFlightsTMP1";
+TRUNCATE public."BufferFlightsTMP2";
 TRUNCATE public."BufferFlights";
 
-
 INSERT INTO 
- public."TMPBufferFlights" (ticket_number, flight_number, dep_city,
+ public."BufferFlightsTMP1" (ticket_number, flight_number, dep_city,
 			dest_city, dep_date, travel_class)
 SELECT DISTINCT 
  YBPDA.ticket_number, 
  YBPDA.flight_number,
- YBPDA.dep_city,
- YBPDA.dest_city,
+ initcap(YBPDA.dep_city),
+ initcap(YBPDA.dest_city),
  YBPDA.dep_date,
  YBPDA.Y_info
 FROM 
@@ -45,7 +54,7 @@ FROM
 
 
 INSERT INTO 
- public."TMPBufferFlights" (ticket_number, dep_city,
+ public."BufferFlightsTMP1" (ticket_number, dep_city,
 			dest_city, dep_date, travel_class)
 SELECT DISTINCT 
  S.Code_e_Ticket, 
@@ -56,10 +65,10 @@ SELECT DISTINCT
 FROM 
  public."Sirena" as S
 WHERE
- S.Code_e_Ticket NOT IN (SELECT ticket_number FROM public."TMPBufferFlights");
+ S.Code_e_Ticket NOT IN (SELECT ticket_number FROM public."BufferFlightsTMP1");
  
 INSERT INTO 
- public."TMPBufferFlights" (ticket_number, flight_number,
+ public."BufferFlightsTMP1" (ticket_number, flight_number,
 			dest_city, dep_date)
 SELECT DISTINCT 
  ticket_number,
@@ -69,18 +78,16 @@ SELECT DISTINCT
 FROM 
  public."BoardingData" as BD
 WHERE
- BD.ticket_number NOT IN (SELECT ticket_number FROM public."TMPBufferFlights");
+ BD.ticket_number NOT IN (SELECT ticket_number FROM public."BufferFlightsTMP1");
 
 INSERT INTO 
- public."BufferFlights" (ticket_number, flight_number, dep_city, dep_country,
-			dest_city, dest_country, dep_date, travel_class, baggage)
+ public."BufferFlightsTMP2" (ticket_number, flight_number, dep_city,
+							dest_city, dep_date, travel_class, baggage)
 SELECT DISTINCT 
  tmpBF.ticket_number, 
  tmpBF.flight_number, 
- tmpBF.dep_city, 
- tmpBF.dep_country,
- tmpBF.dest_city, 
- tmpBF.dest_country,
+ tmpBF.dep_city,
+ tmpBF.dest_city,
  tmpBF.dep_date, 
  tmpBF.travel_class,
  BD.baggage
@@ -90,6 +97,32 @@ FROM
   baggage
  FROM public."BoardingData") as BD
  RIGHT JOIN
-  public."TMPBufferFlights" as tmpBF
+  public."BufferFlightsTMP1" as tmpBF
  ON
   tmpBF.ticket_number=BD.ticket_number;
+
+
+INSERT INTO 
+ public."BufferFlights" (ticket_number, flight_number, dep_city,
+						dest_city, dep_date, travel_class, baggage)
+SELECT DISTINCT 
+ tmpBF.ticket_number, 
+ tmpBF.flight_number, 
+ tmpBF.dep_city,
+ tmpBF.dest_city,
+ tmpBF.dep_date, 
+ tmpBF.travel_class,
+ S.baggage
+FROM 
+ (SELECT DISTINCT
+  code_e_ticket,
+  baggage
+ FROM public."Sirena") as S
+ RIGHT JOIN
+  public."BufferFlightsTMP2" as tmpBF
+ ON
+  S.code_e_ticket=tmpBF.ticket_number;
+  
+DELETE FROM public."BufferFlights" WHERE ticket_number='Not Presented';
+
+SELECT * FROM public."BufferFlights";
