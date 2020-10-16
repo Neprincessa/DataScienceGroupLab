@@ -1,9 +1,10 @@
 create table public."BufferPerson"
 (
-	id SERIAL,
-	first_name varchar(25) not null,
-	last_name varchar(25) not null,
-	passenger_document VARCHAR(30) NULL
+	person_id SERIAL,
+	first_name varchar(25) null,
+	last_name varchar(25) null,
+	passenger_document VARCHAR(30) NULL,
+	PRIMARY KEY(person_id)
 );
 
 INSERT INTO 
@@ -65,3 +66,6 @@ WHERE
  AND last_name != YBPDA.last_name
  AND YBPDA.first_name IS NOT NULL
  AND YBPDA.last_name IS NOT NULL;
+
+
+SELECT * FROM public."BufferPerson";
