@@ -1,6 +1,11 @@
 import postgresql
 import postgresql.driver as pg_driver
 import psycopg2
+import requests, json
+from transliterate import translit, get_available_language_codes
+import cyrtranslit
+from datetime import date
+
 
 import sys
 
@@ -317,6 +322,502 @@ def create_tables_copy_data(db_in, path_in):
 	db_in.execute(scr6)
 	db_in.execute(scr8)
 
+def getGenders(names):
+	url = ""
+	cnt = 0
+	if not isinstance(names,list):
+		names = [names,]
+	
+	for name in names:
+		if url == "":
+			url = "name[0]=" + name
+		else:
+			cnt += 1
+			url = url + "&name[" + str(cnt) + "]=" + name
+		
 
-create_tables_copy_data(db, path)
+	req = requests.get("https://api.genderize.io?" + url)
+	results = json.loads(req.text)
+	
+	retrn = []
+	for result in results:
+		if result["gender"] is not None:
+			retrn.append((result["gender"], result["probability"], result["count"]))
+		else:
+			if len(results) > 1:
+				continue
+			if len(results) == 1:
+				retrn.append((u'None',u'0.0',0.0))
+	return retrn
 
+
+def find_sex(first_name_in, second_name_in):
+	lst = [first_name_in, second_name_in]
+	return getGenders(lst)
+
+
+def get_collapsed(db_in):
+	handleCollapsed = open("collapsed_data.txt")
+	collapsed_data = []
+	
+	ans = db_in.query("""SELECT "case", first_name, last_name FROM public.yourboardingpassdotaero_good;""")
+	for sex, first, second in ans:
+		rt = find_sex(first, second)
+		if len(rt) > 0:
+			if type(rt) == list:
+				sum = 0
+				count = len(rt)
+				for i in rt:
+					sum += i[1]
+				if rt[0] == None:
+					cl_data = [sex, first, second, float(sum / count)]
+					handleCollapsed.write(str(cl_data))
+					collapsed_data.append(cl_data)
+				if (float(sum / count) < 0.95):
+					cl_data = [sex, first, second, float(sum / count)]
+					handleCollapsed.write(str(cl_data))
+					collapsed_data.append(cl_data)
+			else:
+				if (rt[1] < 0.95):
+					cl_data = [sex, first, second, rt[1]]
+					handleCollapsed.write(str(cl_data))
+					collapsed_data.append(cl_data)
+		else:
+			cl_data = [sex, first, second, 0]
+			collapsed_data.append(cl_data)
+	
+	with open("collapsed_data.txt", newline='') as fl:
+		for i in collapsed_data:
+			fl.write(str(i) + '\n')
+
+
+
+def insert_mergering_data(db_in):
+	
+	scr1 = """ 
+create table public."BufferPerson"
+(
+	person_id SERIAL,
+	first_name varchar(25) null,
+	last_name varchar(25) null,
+	passenger_document VARCHAR(30) NULL,
+	PRIMARY KEY(person_id)
+);
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name, passenger_document)
+SELECT DISTINCT 
+ BD.first_name, 
+ BD.last_name,
+ BD.passenger_document
+FROM 
+ public."BoardingData" BD
+FULL OUTER JOIN
+(SELECT DISTINCT
+  paxname,
+  null,
+  traveldoc
+ FROM
+  public."Sirena-export-fixed") as S
+ON
+ BD.passenger_document = S.traveldoc;
+
+DELETE FROM public."BufferPerson" WHERE (first_name IS NULL AND last_name IS NULL);
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name)
+SELECT DISTINCT 
+ AD.first_name, 
+ AD.last_name
+FROM 
+ public."AirlinesData" AS AD
+WHERE
+ first_name != AD.first_name
+ AND last_name != AD.last_name
+ AND AD.first_name IS NOT NULL
+ AND AD.last_name IS NOT NULL;
+
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name)
+SELECT DISTINCT 
+ FPI.first_name, 
+ FPI.last_name
+FROM 
+ public."ForumPersonalInformation" AS FPI
+WHERE
+ first_name != FPI.first_name
+ AND last_name != FPI.last_name
+ AND FPI.first_name IS NOT NULL
+ AND FPI.last_name IS NOT NULL;
+
+INSERT INTO 
+ public."BufferPerson" (first_name, last_name)
+SELECT DISTINCT 
+ YBPDA.first_name, 
+ YBPDA.last_name
+FROM 
+ public."YourBoardingPassDotAero" AS YBPDA
+WHERE
+ first_name != YBPDA.first_name
+ AND last_name != YBPDA.last_name
+ AND YBPDA.first_name IS NOT NULL
+ AND YBPDA.last_name IS NOT NULL;
+
+
+SELECT * FROM public."BufferPerson";
+"""
+
+	
+	scr2 = """ 
+create table public."BufferMatchingPersonFlight"(
+	ticket_number VARCHAR(30) NOT NULL,
+	passenger_document VARCHAR(30) NOT NULL
+);
+
+TRUNCATE public."BufferMatchingPersonFlight";
+
+INSERT INTO 
+ public."BufferMatchingPersonFlight"
+SELECT DISTINCT 
+ BD.ticket_number,
+ BD.passenger_document
+FROM 
+ public."BoardingData" as BD
+WHERE
+ BD.ticket_number IS NOT NULL
+ AND BD.ticket_number != 'Not presented'
+ AND BD.passenger_document IS NOT NULL;
+ 
+INSERT INTO 
+ public."BufferMatchingPersonFlight"
+SELECT DISTINCT 
+ S.code_e_ticket,
+ S.traveldoc
+FROM 
+ public."Sirena-export-fixed" as S
+WHERE
+ S.code_e_ticket NOT IN (SELECT ticket_number FROM public."BufferMatchingPersonFlight")
+ AND S.code_e_ticket IS NOT NULL
+ AND S.code_e_ticket != 'Not presented'
+ AND S.traveldoc IS NOT NULL; 
+
+SELECT * FROM public."BufferMatchingPersonFlight";
+"""
+
+	
+
+	scr3 = """ 
+create table public."BufferFlightsTMP1"
+(
+	flight_id SERIAL,
+	ticket_number VARCHAR(30) NULL,
+	flight_number VARCHAR(30) NULL, 
+	dep_city VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	dep_date DATE NULL,
+	travel_class VARCHAR(30) NULL,
+	baggage VARCHAR(30) NULL	
+);
+
+create table public."BufferFlightsTMP2"
+(
+	flight_id SERIAL,
+	ticket_number VARCHAR(30) NULL,
+	flight_number VARCHAR(30) NULL, 
+	dep_city VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	dep_date DATE NULL,
+	travel_class VARCHAR(30) NULL,
+	baggage VARCHAR(30) NULL	
+);
+
+
+create table public."BufferFlights"
+(
+	flight_id SERIAL,
+	ticket_number VARCHAR(30) NULL,
+	flight_number VARCHAR(30) NULL, 
+	dep_city 	VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	dep_date DATE NULL,
+	travel_class VARCHAR(30) NULL,
+	baggage VARCHAR(30) NULL,
+	PRIMARY KEY (flight_id)
+);
+
+TRUNCATE public."BufferFlightsTMP1";
+TRUNCATE public."BufferFlightsTMP2";
+TRUNCATE public."BufferFlights";
+
+INSERT INTO 
+ public."BufferFlightsTMP1" (ticket_number, flight_number, dep_city,
+			dest_city, dep_date, travel_class)
+SELECT DISTINCT 
+ YBPDA.ticket_number, 
+ YBPDA.flight_number,
+ initcap(YBPDA.dep_city),
+ initcap(YBPDA.dest_city),
+ YBPDA.dep_date,
+ YBPDA.Y_info
+FROM 
+ public."YourBoardingPassDotAero" as YBPDA;
+
+
+INSERT INTO 
+ public."BufferFlightsTMP1" (ticket_number, dep_city,
+			dest_city, dep_date, travel_class)
+SELECT DISTINCT 
+ S.Code_e_Ticket, 
+ S.From_,
+ S.Dest,
+ S.DepartDate,
+ S.TrvCls_Fare
+FROM 
+ public."Sirena-export-fixed" as S
+WHERE
+ S.Code_e_Ticket NOT IN (SELECT ticket_number FROM public."BufferFlightsTMP1");
+ 
+INSERT INTO 
+ public."BufferFlightsTMP1" (ticket_number, flight_number,
+			dest_city, dep_date)
+SELECT DISTINCT 
+ ticket_number,
+ flight_number,
+ dest_city,
+ dep_date
+FROM 
+ public."BoardingData" as BD
+WHERE
+ BD.ticket_number NOT IN (SELECT ticket_number FROM public."BufferFlightsTMP1");
+
+INSERT INTO 
+ public."BufferFlightsTMP2" (ticket_number, flight_number, dep_city,
+							dest_city, dep_date, travel_class, baggage)
+SELECT DISTINCT 
+ tmpBF.ticket_number, 
+ tmpBF.flight_number, 
+ tmpBF.dep_city,
+ tmpBF.dest_city,
+ tmpBF.dep_date, 
+ tmpBF.travel_class,
+ BD.baggage
+FROM 
+ (SELECT DISTINCT
+  ticket_number,
+  baggage
+ FROM public."BoardingData") as BD
+ RIGHT JOIN
+  public."BufferFlightsTMP1" as tmpBF
+ ON
+  tmpBF.ticket_number=BD.ticket_number;
+
+
+INSERT INTO 
+ public."BufferFlights" (ticket_number, flight_number, dep_city,
+						dest_city, dep_date, travel_class, baggage)
+SELECT DISTINCT 
+ tmpBF.ticket_number, 
+ tmpBF.flight_number, 
+ tmpBF.dep_city,
+ tmpBF.dest_city,
+ tmpBF.dep_date, 
+ tmpBF.travel_class,
+ S.baggage
+FROM 
+ (SELECT DISTINCT
+  code_e_ticket,
+  baggage
+ FROM public."Sirena-export-fixed") as S
+ RIGHT JOIN
+  public."BufferFlightsTMP2" as tmpBF
+ ON
+  S.code_e_ticket=tmpBF.ticket_number;
+  
+DELETE FROM public."BufferFlights" WHERE ticket_number='Not Presented';
+DROP TABLE  public."BufferFlightsTMP1";
+DROP TABLE  public."BufferFlightsTMP2";
+
+SELECT * FROM public."BufferFlights";
+"""
+
+	db_in.execute(scr3)
+	db_in.execute(scr2)
+	db_in.execute(scr1)
+	
+#insert_mergering_data(db)
+
+def translitData(db_in):
+	scr1 = """
+	create table public."TRANSLITNAMES"
+	(
+		name_id SERIAL,
+		rusName VARCHAR(30),
+		transNameFirst VARCHAR(30), 
+		transNameLast VARCHAR(30),
+	);
+	"""	
+	
+	#db_in.execute(scr1)
+	
+	scr2 = """ SELECT DISTINCT paxname FROM public."Sirena-export-fixed"; """
+	
+	ans = db_in.query(scr2)
+	i = 1	
+
+	for name in ans:
+		try:
+			strName = name[0]
+			#out_data = translit(strName, 'ru', reversed=True)
+			out_data = cyrtranslit.to_latin(strName, 'ru')
+			first_name = ''
+			midleName = ''
+			LastName = ''
+				
+			with open("out.txt", 'a') as file:
+				LastName = out_data[0:out_data.find(' ')]
+				out_data = out_data[out_data.find(' ') + 1 : ]
+				place = out_data.find(' ')
+				if(place < 0):
+					first_name = out_data
+				else:
+					first_name = out_data[0:out_data.find(' ')]
+				out_data = out_data[out_data.find(' ') + 1 : ]
+				midleName = out_data
+				out_str = str(i) + ';' + LastName.upper() + ';' + first_name.upper() + ';' + midleName.upper() + '\n'
+				file.write(out_str)
+			i += 1
+
+		except Exception as e:
+			with open("collapsed_data.txt", 'a') as f2:
+				file.write("HARD TO UNDERSTAND: " + name + ' ' + str(i) + '\n')
+			print("HARD TO UNDERSTAND: " + name + ' ' + str(i))
+			i += 1
+			continue
+	
+
+
+def high_year(year):
+	if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+		return True
+	else:
+		return False
+
+#translitData(db)
+
+flights = []
+
+passData = {'FirstName' : '', 'LastName' : '', 'amountFlights' : 0, 'passDoc' : '', 'travleClass' : 0, 'foodInfo' : 0, 'depCity' : 0, 'destCity' : 0, 'date' : 0}
+
+#classType = {'F' : 1, 'A' : 1, 'J' : 2, 'C' : 2, 'P' : 3, 'Y' : 4, 'NULL' : -1}
+classType = {'FA' : 1, 'JC' : 2, 'P' : 3, 'Y' : 4, 'NULL' : -1}
+
+
+
+def analis(db_in):
+	
+	scr1 = """ SELECT person_id, first_name, last_name, passenger_document
+	FROM public."BufferPerson"; """
+	ans = db_in.query(scr1)
+		
+	out_list = []
+
+	for i in ans:
+		ans1 = i
+		nm1 = ans1[1]
+		nm2 = ans1[2]
+		psp = ans1[3]
+
+	
+		scr2 = """ Select * from "MergedData" where (first_name = '{}' and last_name = '{}') or (first_name = '{}' and last_name = '{}') and passenger_document = '{}'""".format(nm1, nm2, nm2, nm1, psp)
+
+		ans2 = db_in.query(scr2)
+	
+		BD = []
+		PP = []
+		CS = []
+		ML = []
+		C1 = []
+		C2 = []
+		DT = []
+
+		passData2 = {'FirstName' : '', 'LastName' : '', 'amountFlights' : '', 'passDoc' : '', 'travleClass' : '0', 'foodInfo' : ''}	#, 'depCity' : 0, 'destCity' : 0, 'date' : 0
+
+
+		if len(ans2) == 0:
+			continue
+
+
+		passData2['FirstName'] = nm1
+		passData2['LastName']  = nm2
+		passData2['amountFlights'] = str(len(ans2))
+		
+
+		for row in ans2:
+			BD.append(row[3])
+			PP.append(row[4])
+			CS.append(row[5])
+			ML.append(row[6])
+			C1.append(row[7])
+			C2.append(row[8])
+			DT.append(row[9])
+			
+
+		if len(CS) == 0:
+			continue
+			
+		classType2 = {'FA' : 0, 'JC' : 0, 'P' : 0, 'Y' : 0, 'NULL' : 0}
+		classType_p = {'FA' : 0, 'JC' : 0, 'P' : 0, 'Y' : 0, 'NULL' : 0}
+		amount = 0
+		for j in CS:
+			if j == 'A' or j == 'F':
+				classType2['FA'] += 1
+			if j == 'J' or j == 'C':
+				classType2['JC'] += 1
+			if j == 'Y':
+				classType2['Y'] += 1
+			if j == 'P':
+				classType2['P'] += 1
+			if j == '':
+				classType2['NULL'] += 1
+			amount += 1
+
+		for key in classType2:
+			try:
+				classType_p[key] = (classType2[key] / amount)
+				if classType_p[key] >= 0.5:
+					print("GOOD")
+					passData2['travleClass'] = str(1)
+			except Exception as e:
+				print(classType2, end=' ')
+				print(amount)
+				
+		
+		for d in BD:
+			if d != '':
+				passData2['foodInfo'] = str(1)
+
+		
+		passport_dict = {}
+		
+		for passport in PP:
+			passport_dict[passport] = 0
+
+		for passport in PP:
+			passport_dict[passport] += 1
+
+		passData2['passDoc'] = str(len(passport_dict))
+
+		with open("expertdata.txt", 'a') as fe:
+			str_out = ''
+			for key in passData2:
+				str_out += passData2[key]
+				str_out += ';'
+			fe.write(str_out[:-1] + '\n')
+	
+		
+	
+
+
+
+analis(db)
