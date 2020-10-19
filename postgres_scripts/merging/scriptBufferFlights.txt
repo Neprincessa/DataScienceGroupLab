@@ -22,17 +22,17 @@ create table public."BufferFlightsTMP2"
 	baggage VARCHAR(30) NULL	
 );
 
-
 create table public."BufferFlights"
 (
 	flight_id SERIAL,
 	ticket_number VARCHAR(30) NULL,
 	flight_number VARCHAR(30) NULL, 
-	dep_city 	VARCHAR(30) NULL,
+	dep_city VARCHAR(30) NULL,
 	dest_city VARCHAR(30) NULL,
 	dep_date DATE NULL,
 	travel_class VARCHAR(30) NULL,
 	baggage VARCHAR(30) NULL,
+	foodinfo VARCHAR(30) NULL,
 	PRIMARY KEY (flight_id)
 );
 
@@ -105,7 +105,7 @@ FROM
 
 INSERT INTO 
  public."BufferFlights" (ticket_number, flight_number, dep_city,
-						dest_city, dep_date, travel_class, baggage)
+						dest_city, dep_date, travel_class, baggage, foodinfo)
 SELECT DISTINCT 
  tmpBF.ticket_number, 
  tmpBF.flight_number, 
@@ -113,11 +113,13 @@ SELECT DISTINCT
  tmpBF.dest_city,
  tmpBF.dep_date, 
  tmpBF.travel_class,
- S.baggage
+ S.baggage,
+ S.Meal
 FROM 
  (SELECT DISTINCT
   code_e_ticket,
-  baggage
+  baggage,
+  Meal
  FROM public."Sirena") as S
  RIGHT JOIN
   public."BufferFlightsTMP2" as tmpBF
@@ -125,6 +127,7 @@ FROM
   S.code_e_ticket=tmpBF.ticket_number;
   
 DELETE FROM public."BufferFlights" WHERE ticket_number='Not Presented';
+
 DROP TABLE  public."BufferFlightsTMP1";
 DROP TABLE  public."BufferFlightsTMP2";
 
