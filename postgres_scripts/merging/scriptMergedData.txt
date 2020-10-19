@@ -1,0 +1,127 @@
+create table public."MergedData"
+(
+	id SERIAL,
+	first_name VARCHAR(30) NULL,
+	last_name VARCHAR(30) NULL,
+	birthdate VARCHAR(30) NULL,
+	passenger_document VARCHAR(30) NULL,
+	travel_class VARCHAR(30) NULL,
+	foodinfo VARCHAR(30) NULL,
+	dep_city VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	dep_date DATE NULL,
+	PRIMARY KEY (id)
+);
+
+create table public."MergedDataTMP1"
+(
+	id SERIAL,
+	first_name VARCHAR(30) NULL,
+	last_name VARCHAR(30) NULL,
+	birthdate VARCHAR(30),
+	passenger_document VARCHAR(30) NULL,
+	travel_class VARCHAR(30) NULL,
+	foodinfo VARCHAR(30) NULL,
+	dep_city VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	dep_date DATE NULL,
+	ticket_number VARCHAR(30) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+create table public."MergedDataTMP2"
+(
+	id SERIAL,
+	first_name VARCHAR(30) NULL,
+	last_name VARCHAR(30) NULL,
+	birthdate VARCHAR(30),
+	passenger_document VARCHAR(30) NULL,
+	travel_class VARCHAR(30) NULL,
+	foodinfo VARCHAR(30) NULL,
+	dep_city VARCHAR(30) NULL,
+	dest_city VARCHAR(30) NULL,
+	dep_date DATE NULL,
+	ticket_number VARCHAR(30) NULL,
+	PRIMARY KEY (id)
+);
+
+TRUNCATE public."MergedDataTMP1";
+TRUNCATE public."MergedDataTMP2";
+TRUNCATE public."MergedData";
+
+INSERT INTO 
+ public."MergedDataTMP1" (ticket_number, passenger_document)
+SELECT DISTINCT 
+ BD.ticket_number,
+ BD.passenger_document
+FROM 
+ public."BoardingData" as BD
+WHERE
+ BD.ticket_number IS NOT NULL
+ AND BD.ticket_number != 'Not presented'
+ AND BD.passenger_document IS NOT NULL;
+ 
+INSERT INTO 
+ public."MergedDataTMP1" (ticket_number, passenger_document)
+SELECT DISTINCT 
+ S.code_e_ticket,
+ S.traveldoc
+FROM 
+ public."Sirena" as S
+WHERE
+ S.code_e_ticket NOT IN (SELECT ticket_number FROM public."MergedDataTMP1")
+ AND S.code_e_ticket IS NOT NULL
+ AND S.code_e_ticket != 'Not presented'
+ AND S.traveldoc IS NOT NULL; 
+
+INSERT INTO 
+ public."MergedDataTMP2" (first_name, last_name, birthdate, ticket_number, passenger_document)
+SELECT DISTINCT 
+ BP.first_name, 
+ BP.last_name, 
+ BP.birthdate,
+ tmpMD.ticket_number, 
+ tmpMD.passenger_document
+FROM 
+ (SELECT DISTINCT
+  first_name, 
+  last_name, 
+  birthdate,
+  passenger_document
+ FROM public."BufferPerson") as BP
+ RIGHT JOIN
+  public."MergedDataTMP1" as tmpMD
+ ON
+  BP.passenger_document=tmpMD.passenger_document;
+
+
+INSERT INTO 
+ public."MergedData" (first_name, last_name, birthdate, passenger_document,
+	 					travel_class, foodinfo, dep_city, dest_city, dep_date)
+SELECT DISTINCT 
+ tmpMD.first_name, 
+ tmpMD.last_name, 
+ tmpMD.birthdate,
+ tmpMD.passenger_document,
+ BF.travel_class, 
+ BF.foodinfo, 
+ BF.dep_city, 
+ BF.dest_city, 
+ BF.dep_date
+FROM 
+ (SELECT DISTINCT
+  travel_class, 
+  foodinfo, 
+  dep_city, 
+  dest_city, 
+  dep_date,
+  ticket_number
+ FROM public."BufferFlights") as BF
+ RIGHT JOIN
+  public."MergedDataTMP2" as tmpMD
+ ON
+  BF.ticket_number=tmpMD.ticket_number;
+  
+  DELETE FROM public."MergedData" WHERE (first_name IS NULL AND last_name IS NULL);
+
+SELECT * FROM public."MergedData";
