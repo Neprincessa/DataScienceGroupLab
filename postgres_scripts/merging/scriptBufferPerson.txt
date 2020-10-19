@@ -1,4 +1,6 @@
-create table public."BufferPerson"
+drop table public."BufferPerson";
+
+create table public."BufferPersonTMP1"
 (
 	person_id SERIAL,
 	first_name varchar(25) null,
@@ -7,8 +9,22 @@ create table public."BufferPerson"
 	PRIMARY KEY(person_id)
 );
 
+create table public."BufferPerson"
+(
+	person_id SERIAL,
+	first_name varchar(25) null,
+	last_name varchar(25) null,
+	passenger_document VARCHAR(30) NULL,
+	birthdate VARCHAR(30),
+	PRIMARY KEY(person_id)
+);
+
+
+TRUNCATE public."BufferPersonTMP1";
+TRUNCATE public."BufferPerson";
+
 INSERT INTO 
- public."BufferPerson" (first_name, last_name, passenger_document)
+ public."BufferPersonTMP1" (first_name, last_name, passenger_document)
 SELECT DISTINCT 
  BD.first_name, 
  BD.last_name,
@@ -25,7 +41,7 @@ FULL OUTER JOIN
 ON
  BD.passenger_document = S.traveldoc;
 
-DELETE FROM public."BufferPerson" WHERE (first_name IS NULL AND last_name IS NULL);
+DELETE FROM public."BufferPersonTMP1" WHERE (first_name IS NULL AND last_name IS NULL);
 
 INSERT INTO 
  public."BufferPerson" (first_name, last_name)
@@ -42,7 +58,7 @@ WHERE
 
 
 INSERT INTO 
- public."BufferPerson" (first_name, last_name)
+ public."BufferPersonTMP1" (first_name, last_name)
 SELECT DISTINCT 
  FPI.first_name, 
  FPI.last_name
@@ -55,7 +71,7 @@ WHERE
  AND FPI.last_name IS NOT NULL;
 
 INSERT INTO 
- public."BufferPerson" (first_name, last_name)
+ public."BufferPersonTMP1" (first_name, last_name)
 SELECT DISTINCT 
  YBPDA.first_name, 
  YBPDA.last_name
@@ -67,5 +83,22 @@ WHERE
  AND YBPDA.first_name IS NOT NULL
  AND YBPDA.last_name IS NOT NULL;
 
+
+INSERT INTO 
+ public."BufferPerson"(first_name, last_name, passenger_document, birthdate)
+SELECT DISTINCT 
+ tmpBP.first_name,
+ tmpBP.last_name,
+ tmpBP.passenger_document,
+ BD.birth_date
+FROM 
+ (SELECT DISTINCT
+  passenger_document,
+  birth_date
+ FROM public."BoardingData") as BD
+ RIGHT JOIN
+  public."BufferPersonTMP1" as tmpBP
+ ON
+  tmpBP.passenger_document=BD.passenger_document;
 
 SELECT * FROM public."BufferPerson";
