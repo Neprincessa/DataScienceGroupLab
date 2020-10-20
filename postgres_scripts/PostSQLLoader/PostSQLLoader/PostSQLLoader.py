@@ -729,19 +729,20 @@ def analis(db_in):
 		psp = ans1[3]
 
 	
-		scr2 = """ Select * from "MergedData" where (first_name = '{}' and last_name = '{}') or (first_name = '{}' and last_name = '{}') and passenger_document = '{}'""".format(nm1, nm2, nm2, nm1, psp)
+		scr2 = """ Select * from "MergedData_0" where (first_name = '{}' and last_name = '{}') or (first_name = '{}' and last_name = '{}') and passenger_document = '{}'""".format(nm1, nm2, nm2, nm1, psp)
 
 		ans2 = db_in.query(scr2)
 	
-		BD = []
-		PP = []
-		CS = []
-		ML = []
-		C1 = []
-		C2 = []
-		DT = []
+		BD = []		#	день рождения
+		PP = []		#	паспортные данные
+		CS = []		#	класс
+		ML = []		#	еда
+		C1 = []		#	город отправки
+		C2 = []		#	город прибытия
+		DT = []		#	дата отправки
+		BG = []		#	багаж
 
-		passData2 = {'FirstName' : '', 'LastName' : '', 'amountFlights' : '', 'travleClass' : '0', 'foodInfo' : '0', 'circle' : '0', 'collapsed' : '0'}	#, 'depCity' : 0, 'destCity' : 0, 'date' : 0
+		passData2 = {'FirstName' : '', 'LastName' : '', 'amountFlights' : '', 'travleClass' : '0', 'foodInfo' : '0', 'circle' : '0', 'collapsed' : '0', 'baggage' : '0'}	#, 'depCity' : 0, 'destCity' : 0, 'date' : 0
 
 
 		if len(ans2) == 0:
@@ -761,6 +762,7 @@ def analis(db_in):
 			C1.append(row[7])		#	город отправки
 			C2.append(row[8])		#	город прибытия
 			DT.append(row[9])		#	дата отправки
+			BG.append(row[10])		#	багаж
 			
 
 		cities = []
@@ -885,8 +887,24 @@ def analis(db_in):
 			except Exception as e:
 				print(classType2, end=' ')
 				print(amount)
-				
+
+		bg_am = 0
+		bg_w = 0
 		
+		for bg in BG:
+			if bg != '':
+				bg_am += 1
+			else:
+				bg_w += 1
+				
+		if len(BG) > 0:
+			pr1 = bg_am / len(BG)
+			if pr1 > 0.7:
+				passData2['baggage'] = str(1)
+		
+		
+		
+
 		for d in ML:
 			if d != '':
 				passData2['foodInfo'] = str(1)
