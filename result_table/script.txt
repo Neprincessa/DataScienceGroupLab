@@ -77,7 +77,95 @@ select substring("PaxName" from '^\S+\s+(.*)\s+'), substring("PaxName" from '[^ 
        "PaxBirthDate", "TravelDoc", "TrvCls_Fare", "Meal", "From_", "Dest", "DepartDate", "Baggage", "FlightCodeSh"
 from "Sirena-export-fixed";
 
+create table result (
+	first_name varchar(30),
+	last_name varchar(30),
+	birthday_date varchar(30),
+	passport varchar(30),
+	class_info varchar(30),
+	meal varchar(4),
+	dep_code varchar(3),
+	dest_code varchar(3),
+	dep_date date,
+	baggage varchar(30)
+);
 
 insert into result(first_name, last_name, birthday_date, passport, class_info, meal, dep_code, dest_code, dep_date, baggage)
 select first_name, last_name, birthday_date, passport, class_info, meal, dep_code, dest_code, dep_date, baggage
 from final_table;
+
+DROP TABLE public."MergedDataTMP1";
+DROP TABLE public."MergedData";
+
+create table public."MergedDataTMP1" (
+	first_name varchar(30),
+	last_name varchar(30),
+	birthday_date varchar(30),
+	passport varchar(30),
+	class_info varchar(30),
+	meal varchar(4),
+	dep_country varchar(30),
+	dest_country varchar(30),
+	dep_date date,
+	baggage varchar(30)
+);
+
+create table public."MergedData" (
+	first_name varchar(30),
+	last_name varchar(30),
+	birthday_date varchar(30),
+	passport varchar(30),
+	class_info varchar(30),
+	meal varchar(4),
+	dep_country varchar(30),
+	dest_country varchar(30),
+	dep_date date,
+	baggage varchar(30)
+);
+
+INSERT INTO 
+ public."MergedDataTMP1" (first_name, last_name, birthday_date, passport, class_info, meal, dep_country, dest_country, dep_date, baggage)
+SELECT DISTINCT 
+ FT.first_name, 
+ FT.last_name, 
+ FT.birthday_date, 
+ FT.passport, 
+ FT.class_info, 
+ FT.meal, 
+ FT.dep_code, 
+ FA.country, 
+ FT.dep_date, 
+ FT.baggage
+FROM 
+ (SELECT DISTINCT
+  abbr,
+  country
+ FROM public."ForumAirport") as FA
+ RIGHT JOIN
+  public."final_table" as FT
+ ON
+  FT.dest_code = FA.abbr;
+
+
+INSERT INTO 
+ public."MergedData" (first_name, last_name, birthday_date, passport, class_info, meal, dep_country, dest_country, dep_date, baggage)
+SELECT DISTINCT 
+ FT.first_name, 
+ FT.last_name, 
+ FT.birthday_date, 
+ FT.passport, 
+ FT.class_info, 
+ FT.meal, 
+ FA.country, 
+ FT.dest_country, 
+ FT.dep_date, 
+ FT.baggage
+FROM 
+ (SELECT DISTINCT
+  abbr,
+  country
+ FROM public."ForumAirport") as FA
+ RIGHT JOIN
+  public."MergedDataTMP1" as FT
+ ON
+  FT.dep_country = FA.abbr;
