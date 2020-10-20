@@ -1,0 +1,83 @@
+create table forum (
+	person_id integer,
+	first_name varchar(30),
+	last_name varchar(30),
+	class varchar(30),
+	dep_airport_id integer,
+	dest_airport_id integer,
+	flight_number varchar(30),
+	dep_date date
+);
+
+insert into forum(person_id, dep_date, flight_number)
+select InfoF.person_id, InfoF.date, InfoF.flight_number
+from "ForumPersonIdInfoFlight" InfoF;
+
+update forum set first_name = I.last_name, last_name = I.first_name
+from "ForumPersonalInformation" I  where forum.person_id = I.person_id;
+
+update forum set class = type
+from "ForumPersonalIdLoyalty" L
+where forum.person_id = L.person_id;
+
+update forum set dep_airport_id = IF.dep_airport_id, dest_airport_id = IF.dest_airport_id
+from "ForumPersonIdFlight" IF
+where forum.person_id = IF.person_id;
+
+
+create table final_tablle (
+	id integer,
+	first_name varchar(30),
+	last_name varchar(30),
+	birthday_date varchar(30),
+	class_info varchar(30),
+	meal varchar(4),
+	dep_code varchar(3),
+	dest_code varchar(3),
+	dep_date date,
+	baggage varchar(30),
+	flight_number varchar(30),
+	ticket_number varchar(30)
+);
+
+
+insert into final_table(id, first_name, last_name, class_info,  dep_date, flight_number)
+select person_id, first_name, last_name, class, dep_date, flight_number
+from forum;
+
+
+update final_table set dep_code = abbr
+from "ForumAirport" FA,
+     forum
+where forum.dep_airport_id = FA.airport_id
+and id = person_id;
+
+
+update final_table set dest_code = abbr
+from "ForumAirport" FA,
+     forum
+where forum.dest_airport_id = FA.airport_id
+and id = person_id;
+
+
+insert into  final_table(first_name, last_name, class_info, dep_code, dest_code, dep_date, flight_number, ticket_number)
+select first_name, last_name, y_info, dep_code, dest_code, dep_date, flight_number, ticket_number
+from "YourBoardingPassDotAero";
+
+insert into final_table(first_name, last_name, birthday_date, passport, dep_date, baggage, flight_number, ticket_number)
+select first_name, last_name, birth_date, passenger_document, dep_date, baggage, flight_number,  ticket_number
+from "BoardingData";
+
+insert into final_table(first_name, last_name, dep_code, dest_code, dep_date)
+select fist_name, last_name, departure, arrival, date
+from "AirlinesData";
+
+insert into  final_table(first_name, last_name, birthday_date, passport, class_info, meal, dep_code, dest_code, dep_date, baggage, flight_number)
+select substring("PaxName" from '^\S+\s+(.*)\s+'), substring("PaxName" from '[^ ]+'::text),
+       "PaxBirthDate", "TravelDoc", "TrvCls_Fare", "Meal", "From_", "Dest", "DepartDate", "Baggage", "FlightCodeSh"
+from "Sirena-export-fixed";
+
+
+insert into result(first_name, last_name, birthday_date, passport, class_info, meal, dep_code, dest_code, dep_date, baggage)
+select first_name, last_name, birthday_date, passport, class_info, meal, dep_code, dest_code, dep_date, baggage
+from final_table;
