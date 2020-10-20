@@ -741,7 +741,7 @@ def analis(db_in):
 		C2 = []
 		DT = []
 
-		passData2 = {'FirstName' : '', 'LastName' : '', 'amountFlights' : '', 'passDoc' : '', 'travleClass' : '0', 'foodInfo' : ''}	#, 'depCity' : 0, 'destCity' : 0, 'date' : 0
+		passData2 = {'FirstName' : '', 'LastName' : '', 'amountFlights' : '', 'travleClass' : '0', 'foodInfo' : '0', 'circle' : '0', 'collapsed' : '0'}	#, 'depCity' : 0, 'destCity' : 0, 'date' : 0
 
 
 		if len(ans2) == 0:
@@ -749,19 +749,113 @@ def analis(db_in):
 
 
 		passData2['FirstName'] = nm1
-		passData2['LastName']  = nm2
+		passData2['LastName'] = nm2
 		passData2['amountFlights'] = str(len(ans2))
 		
 
 		for row in ans2:
-			BD.append(row[3])
-			PP.append(row[4])
-			CS.append(row[5])
-			ML.append(row[6])
-			C1.append(row[7])
-			C2.append(row[8])
-			DT.append(row[9])
+			BD.append(row[3])		#	день рождения
+			PP.append(row[4])		#	паспортные данные
+			CS.append(row[5])		#	класс
+			ML.append(row[6])		#	еда
+			C1.append(row[7])		#	город отправки
+			C2.append(row[8])		#	город прибытия
+			DT.append(row[9])		#	дата отправки
 			
+
+		cities = []
+
+		for city_ind in range(len(C2)):
+			cities.append(C1[city_ind])
+			cities.append(C2[city_ind])
+
+		name_city = []
+	
+		for city in cities:
+					
+			if city != '':
+				scr3 = """SELECT name from "ForumAirport" where	abbr = '{}' ; """.format(city)	
+				ans3_city = db_in.query(scr3)
+				if len(ans3_city) == 0:
+					name_city.append(city)
+					continue
+				#print(ans3_city)
+				name_city.append(ans3_city[0][0])
+			
+			else:
+				name_city.append('')
+				passData2['circle'] = '-1'	#	данные поломаны (
+				#break
+
+		
+		
+
+		#test_data = ['g1', 'g2', 'g2', 'g3', 'g3', 'g2', 'g2', 'g1', 'g5', 'g1']
+		#name_city = test_data
+
+
+		
+		city_bits = [0 for i in range(len(name_city))]
+
+		try:
+
+			for city_index in range(len(name_city)):
+				if city_index % 2 == 1 and city_index + 1 < len(name_city):
+					if name_city[city_index] == name_city[city_index + 1]:
+						city_bits[city_index + 1] = 1
+					if name_city[city_index] != name_city[city_index + 1]:
+						for k in range(city_index, 0, -2):
+							strt = name_city[city_index]
+							if k - 3 >= 0:
+								if city_bits[k - 1] == 0:
+									city_bits[city_index] = -1
+									break		
+								if name_city[k - 3] == strt and city_bits[k - 1] == 1:
+									city_bits[city_index] = 2
+									break
+								if city_bits[k - 1] == 1:
+									continue
+										
+
+						if city_bits[city_index] == 0:
+							city_bits[city_index] = -1
+
+				if city_index % 2 == 0 and city_index + 1 == len(name_city) - 1:
+					if city_bits[city_index - 1] == 2 or city_bits[city_index - 1] == -1:
+						city_bits[city_index] = -1
+						continue
+					strt = name_city[city_index + 1]
+					for k in range(city_index + 1, 0, -2):
+						if k - 3 >= 0:
+							if name_city[k - 3] == strt and city_bits[k - 1] == 1:
+								city_bits[city_index + 1] = 2
+								break
+							if city_bits[k - 1] == 1:
+								continue
+				
+				
+			circles = 0
+			collapsed = 0
+
+			for city in city_bits:
+				if city == 2:
+					circles += 1
+				if city == -1:
+					collapsed += 1
+
+			
+			passData2['circle'] = str(circles)
+			passData2['collapsed'] = str(collapsed)
+		
+		except Exception as e:
+				with open('collapsed_data.txt', 'a') as file_c:
+					file_c.write(str(ans2) + '\n')
+					file_c.write(str(name_city) + '\n')
+					for pr in range(15):
+						file_c.write('=')
+					file_c.write('\n')
+	
+		
 
 		if len(CS) == 0:
 			continue
@@ -786,27 +880,17 @@ def analis(db_in):
 			try:
 				classType_p[key] = (classType2[key] / amount)
 				if classType_p[key] >= 0.5:
-					print("GOOD")
+					#print("GOOD")
 					passData2['travleClass'] = str(1)
 			except Exception as e:
 				print(classType2, end=' ')
 				print(amount)
 				
 		
-		for d in BD:
+		for d in ML:
 			if d != '':
 				passData2['foodInfo'] = str(1)
 
-		
-		passport_dict = {}
-		
-		for passport in PP:
-			passport_dict[passport] = 0
-
-		for passport in PP:
-			passport_dict[passport] += 1
-
-		passData2['passDoc'] = str(len(passport_dict))
 
 		with open("expertdata.txt", 'a') as fe:
 			str_out = ''
@@ -816,8 +900,5 @@ def analis(db_in):
 			fe.write(str_out[:-1] + '\n')
 	
 		
-	
-
-
 
 analis(db)
